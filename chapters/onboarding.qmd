@@ -19,13 +19,13 @@ We all want to get paid! To make sure you do, please follow the steps outlined b
 #| fig-align: "center"
 knitr::include_graphics(here::here("graphics", "self_service_login.png"))
 ```
-  4. On the next screen, click on the Time button.
+  4. On the next screen, click on the `Time` button.
 ```{r}
 #| echo: false
 #| fig-align: "center"
 knitr::include_graphics(here::here("graphics", "time.png"))
 ```
-  5. And then the Timesheet button.
+  5. And then the `Timesheet` button.
 ```{r}
 #| echo: false
 #| fig-align: "center"
@@ -36,6 +36,13 @@ knitr::include_graphics(here::here("graphics", "timesheet_button.png"))
 #| echo: false
 #| fig-align: "center"
 knitr::include_graphics(here::here("graphics", "timesheet.png"))
+``` 
+
+To access W-2 forms, payroll calendars and more, click the `Payroll Resources` button.
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "payroll_resources.png"))
 ``` 
 
 If you have issues with any step in this process, you may reach out to the IT help desk at [713-486-4848](tel:7134864848).

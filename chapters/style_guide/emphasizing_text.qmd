@@ -6,7 +6,7 @@ lightbox: true
 
 Use the following conventions to emphasize keywords, concepts, code snippets, and other words or phrases that need to stand out or be emphasized.
 
-### Application names
+### Application Names
 Capitalize the names of applications.
 
 -   Do this: Microsoft Outlook, Outlook, Microsoft Planner, Planner.
@@ -28,7 +28,7 @@ At times, we will also *Italicize* keywords or phrases that we want to call atte
 -   **Do this:** We do not want to coerce participants into signing the consent form.
 -   **Do not do this:** We do NOT/**not**/*not*/***not***/[***not***]{.underline} want to coerce participants into signing the consent form.
 
-### Programming code
+### Programming Code
 
 Snippets of programming code should be written in the `Courier New` font with a light gray background. This matches the style convention used by many popular programming websites like GitHub and Stack Overflow. To make using this format easier, any document that was created by duplicating the New SOP Template will have a `code` option in the styles menu.
 
@@ -41,19 +41,19 @@ knitr::include_graphics(here::here("graphics", "code_snippet.png"))
   - **Do this:** `utcNow()`, `dplyr::select()`.
   - **Do not do this:** utcNow(), *dplyr::select()*, **dplyr::select()**, "dplyr::select()"
 
-### Clickable operations in applications
+### Clickable Operations in Applications
 In many of the applications we use, clickable steps or operations serve the same function as programming code. For example, in Microsoft word, we don't type "bold('Do this')". Instead, we highlight the phrase "Do this" with our mouse and then click the `B` button in the toolbar. Then, Microsoft Word takes care of the programming behind the scenes for us. Therefore, clickable operations that need to be performed in an application should be written in same style used to write code. To make using this format easier, any document that was created by duplicating the New SOP Template will have a `code` option in the styles menu.
 
   - **Do this:** Click on the `Insert` tab...
   - **Do not do this:** Click on the *Insert*/INSERT/**insert**/[insert]{.underline} tab.
 
-### File paths
+### File Paths
 All file paths should be written in italic text with a light gray background. To make using this format easier, any document that was created by duplicating the New SOP Template will have a `File Paths` option in the styles menu. Additionally, the root directory (i.e., starting point) for all SharePoint/Teams documents is the Documents folder.
 
   - **Do this:** `Documents/General/SOPs/02 Style Guide.docx`.
   - **Do not do this:** "Documents/General/SOPs/02 Style Guide.docx".
 
-### File and Folder names
+### File and Folder Names
 File and Folder names are essentially very short file paths. Therefore, file names and folder names should be written using the file paths guidelines from above. There is one exception to this rule. When creating a hyperlink to a file or folder, then the standard hyperlink style (i.e., [link]()) should be used.
 
   - **Do this:** The `SOP` folder.

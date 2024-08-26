@@ -1,5 +1,5 @@
 # Document Library Structure {#sec-doc_lib_structure .unnumbered}
-### Folder structure 
+### Folder Structure 
   - Each folder in the document library should generally be associated with a specific theme or topic, which may have sub-themes and subtopics.  
     - **Do this:** `IRB Documents` or `Budget Documents`. 
     - **Do not do this:** `Budgets and IRB Documents`. 
@@ -12,7 +12,7 @@
     - For example, a folder containing CITI training certificates should probably be nested in the `IRB Documents folder`.  
     - A folder containing GRA applicant resumes, a folder containing GRA work schedules, and a folder containing job announcements should probably all be nested in a `Hiring` folder, which should probably be nested in a `HR` folder.  
 
-### Folder names 
+### Folder Names 
   - Folders for programming code repositories should be written in snake case. This is to help ensure that the folder name works easily with R, Git, Bash, and other software used in the data analysis pipeline. 
     - **Do this:** `detect_public_repo`. 
     - **Do not do this:** `DETECT Public Repo`. 
@@ -49,11 +49,11 @@
     - **Do this:**  `Reliance Agreement UAB`, `Reliance Agreement UCSF`, `Reliance Agreement JHU`. 
     - **Do not do this:** `UAB Reliance Agreement`, `UCSF Reliance Agreement`, `JHU Reliance Agreement`. 
 
-### File structure 
+### File Structure 
   - Files should generally be grouped together and placed in a folder that describes the theme or topic they belong to. 
   - Folders that contain a single file should be rare. 
 
-### File names 
+### File Names 
   - Programming code files should be written in snake case. This is to help ensure that the file name works easily with R, Git, Bash, and other software used in the data analysis pipeline. 
     - **Do this:**  `01_data_import.Rmd`. 
     - **Do not do this:** `Data Import.Rmd`. 
