@@ -1,0 +1,60 @@
+---
+lightbox: true
+---
+
+# Emphasizing Text {#sec-emph_text .unnumbered}
+
+Use the following conventions to emphasize keywords, concepts, code snippets, and other words or phrases that need to stand out or be emphasized.
+
+### Application names
+Capitalize the names of applications.
+
+-   Do this: Microsoft Outlook, Outlook, Microsoft Planner, Planner.
+-   Do not do this: microsoft outlook, outlook, microsoft planner, planner.
+
+### Keywords
+Underline a keyword or phrase if it is a keyword or phrase that we would want to define in the glossary of the document (whether the document actually has a glossary or not).
+
+-   **Do this:** [A standard operating procedure]{.underline} (SOP) is...
+-   **Do not do this: A standard operating procedure (SOP)** is..., A standard operating procedure (SOP) is...
+
+**Bold** a keyword or phrase that we want to call attention to, but it is not necessarily a keyword or phrase that we would want to define in the glossary of the document (whether the document actually has a glossary or not).
+
+-   **Do this:** \*\*Step 1.\*\*, \*\* Do this:\*\*.
+-   **Do not do this:** [Step 1.]{.underline}, Do this.
+
+At times, we will also *Italicize* keywords or phrases that we want to call attention to, but are not necessarily keywords or phrases that we would want to define in the glossary of the document (whether the document actually has a glossary or not). In general, we will follow [standard English grammar rules for using the italics typeface](https://www.grammarly.com/blog/italics/) (pay special attention to bullet 14). Further, "avoid using italics with other stylized typefaces, such as bold and underline. Since all three are designed to make words stand out, only one at a time is necessary." ([Ellis, 2022](https://www.grammarly.com/blog/italics/))
+
+-   **Do this:** We do not want to coerce participants into signing the consent form.
+-   **Do not do this:** We do NOT/**not**/*not*/***not***/[***not***]{.underline} want to coerce participants into signing the consent form.
+
+### Programming code
+
+Snippets of programming code should be written in the `Courier New` font with a light gray background. This matches the style convention used by many popular programming websites like GitHub and Stack Overflow. To make using this format easier, any document that was created by duplicating the New SOP Template will have a `code` option in the styles menu.
+
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "code_snippet.png"))
+``` 
+
+  - **Do this:** `utcNow()`, `dplyr::select()`.
+  - **Do not do this:** utcNow(), *dplyr::select()*, **dplyr::select()**, "dplyr::select()"
+
+### Clickable operations in applications
+In many of the applications we use, clickable steps or operations serve the same function as programming code. For example, in Microsoft word, we don't type "bold('Do this')". Instead, we highlight the phrase "Do this" with our mouse and then click the `B` button in the toolbar. Then, Microsoft Word takes care of the programming behind the scenes for us. Therefore, clickable operations that need to be performed in an application should be written in same style used to write code. To make using this format easier, any document that was created by duplicating the New SOP Template will have a `code` option in the styles menu.
+
+  - **Do this:** Click on the `Insert` tab...
+  - **Do not do this:** Click on the *Insert*/INSERT/**insert**/[insert]{.underline} tab.
+
+### File paths
+All file paths should be written in italic text with a light gray background. To make using this format easier, any document that was created by duplicating the New SOP Template will have a `File Paths` option in the styles menu. Additionally, the root directory (i.e., starting point) for all SharePoint/Teams documents is the Documents folder.
+
+  - **Do this:** `Documents/General/SOPs/02 Style Guide.docx`.
+  - **Do not do this:** "Documents/General/SOPs/02 Style Guide.docx".
+
+### File and Folder names
+File and Folder names are essentially very short file paths. Therefore, file names and folder names should be written using the file paths guidelines from above. There is one exception to this rule. When creating a hyperlink to a file or folder, then the standard hyperlink style (i.e., [link]()) should be used.
+
+  - **Do this:** The `SOP` folder.
+  - **Do not do this:** The "SOP" folder. The **SOP** folder.

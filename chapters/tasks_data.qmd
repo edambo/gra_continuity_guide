@@ -1,0 +1,145 @@
+---
+lightbox: true
+toc-depth: 5
+---
+
+# Data Management and Analysis Tasks {#sec-data .unnumbered}
+
+Most, if not all, of our research projects will involve the management and analysis of data. This section of the SOP includes information intended to make it easier for us to find and use the files we need to access, manage, and analyze project data. These files broadly include project data files, programming code files, and general project documentation files. All three will be covered below. However, there are a couple of general topics that we should familiarize ourselves with first. Namely, protective health information (PHI), reproducible research, and GitHub.
+
+### Protected Health Information
+
+We should already be familiar with PHI from our [CITI training courses](https://www.uth.edu/cphs/for-researchers/training.htm). However, this concept is so important that it bears repeating here. The UC Berkely Human Research Protection Program website summarizes PHI this way:
+
+> *Protected Health Information (PHI) is any information in the medical record or designated record set that can be used to identify an individual and that was created, used, or disclosed in the course of providing a health care service such as diagnosis or treatment. HIPAA regulations allow researchers to access and use PHI when necessary to conduct research. However, HIPAA applies only to research that uses, creates, or discloses PHI that enters the medical record or is used for healthcare services, such as treatment, payment, or operations*.
+
+It further goes on to list 18 identifiers that can be used to identify the individual associated with the health records. They are:
+
+1.  Names;
+2.  All geographical subdivisions smaller than a State, including street address, city, county, precinct, zip code, and their equivalent geocodes, except for the initial three digits of a zip code, if according to the current publicly available data from the Bureau of the Census: (1) The geographic unit formed by combining all zip codes with the same three initial digits contains more than 20,000 people; and (2) The initial three digits of a zip code for all such geographic units containing 20,000 or fewer people is changed to 000.
+3.  All elements of dates (except year) for dates directly related to an individual, including birth date, admission date, discharge date, date of death; and all ages over 89 and all elements of dates (including year) indicative of such age, except that such ages and elements may be aggregated into a single category of age 90 or older;
+4.  Phone numbers;
+5.  Fax numbers;
+6.  Electronic mail addresses;
+7.  Social Security numbers (SSN);
+8.  Medical record numbers (MRN);
+9.  Health plan beneficiary numbers;
+10. Account numbers;
+11. Certificate/license numbers;
+12. Vehicle identifiers and serial numbers, including license plate numbers;
+13. Device identifiers and serial numbers;
+14. Web Universal Resource Locators (URLs);
+15. Internet Protocol (IP) address numbers;
+16. Biometric identifiers, including finger and voice prints;
+17. Full face photographic images and any comparable images; and
+18. Any other unique identifying number, characteristic, or code (note this does not mean the unique code assigned by the investigator to code the data)
+
+### Reproducible Research
+
+We will strive to make our projects conform to best practices for promoting reproducible research. Many resources that describe what reproducible research is, and why it's important, are available on the internet, and we encourage you to look at some of them. Briefly, here is an excerpt from [Wikipedia](https://en.wikipedia.org/wiki/Reproducibility) that is good enough for our purposes:
+
+> *"The term reproducible research refers to the idea that scientific results should be documented in such a way that their deduction is fully transparent. This requires a detailed description of the methods used to obtain the data and making the full data set and the code to calculate the results easily accessible. This is the essential part of open science.*
+
+> *To make any research project computationally reproducible, general practice involves all data and files being clearly separated, labelled, and documented. All operations should be fully documented and automated as much as practicable, avoiding manual intervention where feasible. The workflow should be designed as a sequence of smaller steps that are combined so that the intermediate outputs from one step directly feed as inputs into the next step. Version control should be used as it lets the history of the project be easily reviewed and allows for the documenting and tracking of changes in a transparent manner."*
+
+Because the data we work with almost always includes (PHI), we will not typically be able to make our data freely available to the general public. However, we will do our best to conform to the remaining elements of reproducible research described above. Two of the most important tools we will use to make our research more reproducible are [git](https://git-scm.com/) and [GitHub](https://github.com/).
+
+#### GitHub
+[GitHub](https://github.com/) is a website specifically designed to facilitate collaboratively creating programming code. In many ways, GitHub is a cloud-based file storage service like Dropbox, Google Drive, or OneDrive. However, GitHub contains some additional features that make it an exceptional tool for collaborating our research projects. Some of these features include:
+
+  - Repositories
+  - Projects
+  - Discussions
+  - Wikis
+
+##### GitHub Repositories
+We will make extensive use of [GitHub](https://github.com/) repositories. If you aren't already familiar with git and GitHub, please start by reading the relevant chapters in [R for Epidemiology](https://www.r4epi.com/introduction-to-git-and-github.html). It's probably a good idea to read those chapters even if you are already familiar with git and GitHub because they describe how we will use our GitHub repositories. Here are some key summary points to keep in mind:
+
+  - Almost all programming code, code documentation, and even a large amount of general project documentation will flow through our projects' GitHub repositories.
+  - Almost all of our programming tasks will be tracked using GitHub projects.
+  - Please work with the project PI and/or program manager to make sure you are able to locate and access the GitHub repositories and GitHub project(s) associated with the research project(s) you are working on.
+
+##### GitHub Projects
+GitHub projects -- we will sometimes refer to them as project boards -- allow us to organize, track, and communicate about [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues). The name "issues" sort of implies a problem, but that isn't how we will use them. We will use issues as tasks that need to be completed, and we will use project boards to track those tasks. In fact, for the rest of this continuity guide, I will refer to them as tasks instead of issues.
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "project.png"))
+```
+The example above is from the DETECT project and we can see examples of tasks that are yet to be started (i.e., Ideas/Eventually/Maybe and Todo), in progress, and already completed (i.e., Done). We can click on the tasks to open a detailed view where we can add a description, we can add sub tasks, and we can leave messages for each other about the task.
+
+There are a couple of advantages to messaging each other about tasks in GitHub instead of sending emails. First, the messages stay with the tasks they are about. You don't have to go search for them later, and all the information/context you need is in one place. Second, when you graduate and leave UTHealth, your email account will be deleted. However, that doesn't necessarily mean you will want to quit working on a project. Fortunately, if we've been communicating in GitHub instead of through email, nothing important is lost.
+
+##### GitHub Discussions
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "discussions.png"))
+```
+As the name indicates, GitHub discussions are a place where we can have discussions about the project. For example, we can exchange ideas and we can ask each other general questions that don't necessarily pertain to a specific task.
+
+##### GitHub Wikis
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "wikis.png"))
+```
+We can generally think of GitHub wikis as an SOP for a specific repository. Wikis aren't about what to do -- that's what tasks are for. Rather, wikis tend to contain information about how to navigate and use the repository and how to complete our tasks in a consistent way. For example, the screenshot above shows part of the [DETECT follow-up interview repository's wiki](https://github.com/brad-cannell/detect_fu_interviews_public/wiki). In this particular screenshot, we can see instructions for navigating and using the repository's file/folder structure.
+
+#### Communicating About Research Projects
+Over time, I have come to really appreciate the number and quality of tools that GitHub provides for collaboratively coding and working on research projects. It truly is an amazing tool in my opinion. Having said that, I understand how it can be pretty intimidating -- or at least overwhelming -- at first. So, here is a little cheat sheet to get us started.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "cheat_sheet.png"))
+```
+
+Here are some additional notes about communication to keep in mind:
+
+  - Please follow the guidance in R4Epi when you have a coding question.
+  - When creating commits, please follow the guidance in R4Epi.
+    - Scroll down to the paragraph that begins with, "The first line is called the commit message."
+
+#### Separation of Data and Code
+By design, public GitHub repositories are not secure -- they are publicly available. So, why do we use them? As discussed above, we use them because we want our research to be as transparent and reproducible as possible. Having said that, we have an obligation to balance reproducibility with the protection of the participants who make our research possible. Our best effort at striking that balance will be to upload almost everything <span style="color:red">except data</span> to our GitHub repositories and make it publicly available. Other people will still be able to use the data, but they will need to follow certain procedures.
+
+We believe the reproducible research approach is the most ethical and productive way to conduct research; however, it does create some additional complications for us. Namely, we can't store the data in our code repository, but we still want to use relative file paths in our code (Please read [this chapter in R4Epi](https://www.r4epi.com/r-projects.html) if you aren't familiar with the difference between relative and absolute file paths). In other words, the file paths we use in the code should work on team member's computer without having to make any alterations to it. There are at least a couple of different ways we can accomplish this.
+
+  1. Create a `data` folder in the repository, but make sure to [gitignore](https://www.r4epi.com/using-git-and-github.html#step-4-update-and-commit-gitignore) all of the data files in the data folder.
+    a. We will then exchange data to add to the folder using a process that is separate from cloning the repository. For example, we will exchange the data using a shared OneDrive folder, you will copy the data from the shared OneDrive folder into the `data` folder in your local repository.
+  2. Another option that is sometimes available is to store the data in a remote database (e.g., FileMaker Pro). Then, we connect to the data using ODBC.
+    a. When using this method, we have to make sure we don't add our database username and password to the code that will be publicly available on GitHub. Additionally, we need to make sure that the code we use to access the remote database is identical on every team member's computer. A credential storage application like [Keyring](https://github.com/r-lib/keyring) helps us meet both of these needs.
+
+What if we do accidentally upload data, PHI, or passwords? Don't freak out! Just let the PI know and we will fix it together.
+
+#### Writing Programming Code
+When writing programming code we generally will follow the guidance given in the [coding tools and best practices part of R4Epi](https://www.r4epi.com/r-scripts.html). If you haven't already done so, please go ahead and read those chapters. In addition to reading about the coding style we will use, there are a couple of R packages that can help you style your code. They are [lintr](https://lintr.r-lib.org/) and [styler](https://styler.r-lib.org/). We highly recommend that you give them a try.
+
+Here are some additional guidelines that may not jump out at you.
+
+  - Use [Quarto](https://quarto.org/) documents.
+    - [Click here to read about Quarto files in R for Epidemiology](https://www.r4epi.com/quarto-files).
+    - We will almost always write our code in Quarto documents (as opposed to R scripts). However, we generally don't need to render them into HTML, Word, or PDF documents. The exception to this guideline includes:
+      - We will typically write functions in R scripts when they will be used in more than one Quarto file.
+      - We will write Shiny applications in R scripts.
+      - If the project we are working on is an R package (as opposed to a research project), all functions will be written in R scripts.
+
+  - Don't add dates or your name to code files. That is what versioning is for.
+    - **Do this:** `01_data_import`.
+    - **Do not do this:** `01_data_import_mbc_edits`, `01_data_import_v2`, `01_data_import_2023_06_14`.
+
+#### Getting Started Task List
+Now that you have some basic information about our team process for working on data management and analysis, here is a quick task list to get you started. It should be applicable for just about any project you are working on.
+
+  - Make sure you've read the most applicable sections of R4Epi. Please pay special attention to:
+    - The [chapter on asking questions](https://www.r4epi.com/asking-questions.html).
+    - All of the [chapters in the coding tools and best practices part](https://www.r4epi.com/r-scripts.html) of the book.
+    - All of the [chapters on using git and GitHub](https://www.r4epi.com/introduction-to-git-and-github.html).
+  - Make sure you have already been added to the IRB protocol.
+  - Download all necessary software to your computer (e.g., RStudio, git, FM pro driver, GitKraken).
+  - Create all necessary subscriptions (e.g., GitHub).
+  - Fork the GitHub repository to your GitHub account.
+  - Clone the GitHub repository to your computer. 
+  - Create a test pull request.
+  - Make sure you can access any data needed for the project.
+  - Start looking through the tasks on the GitHub project board.

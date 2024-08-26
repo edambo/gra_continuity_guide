@@ -1,0 +1,39 @@
+# Expectations and Advice {#sec-expectations .unnumbered}
+
+## General Expectations
+
+We believe that setting clear expectations upfront is kind and will help you to have a successful GRA experience. In that spirit, here are some of the general expectations we have for our team members:
+
+#### Work Your Committed Hours
+
+Nobody likes to be micromanaged, and we don't like micromanaging. In general, we prefer to have a relaxed work environment where people are free to work whenever and wherever they work best. However, at the end of the day, we are all getting paid to do a job, and the job needs to get done. If you committed to working 19.5 hours per week, the expectation is that the project will get a full 19.5 hours of your best effort each week if there is work that needs to be done.
+
+#### Be Available
+
+Try your best to be available when the team needs you. For example, be responsive to emails and attend team meetings. If you are sick, need to adjust your hours, or have a conflict, let the program manager know and we can arrange accommodation. We realize that emergencies, class commitments, and other situations arise.
+
+#### Code Collaboratively through GitHub
+
+All collaborative coding tasks will be tracked through GitHub. If you aren't familiar with GitHub, you can start by checking out the [chapters in R4Epi](https://www.r4epi.com/introduction-to-git-and-github.html) on using Git and GitHub. When you complete your coding tasks, push them to GitHub so that the PI can review and approve them.
+
+#### Be Flexible
+
+Be ready for many kinds of work projects. Some weeks may be all coding, other weeks may have responsibilities that include working in iRIS, writing, or researching. All of these tasks have value and help move the project forward to success.
+
+## Advice for GRA Success
+
+The most important trait you can master as a GRA is developing a habit of taking initiative. Of course, you will need some time at the beginning of your GRA experience to figure out what is going with the project you've been hired to work on and how each team member's role/personality should be best managed. However, after a few weeks to a month, you should start to take initiative on your own.
+
+What does this mean? To us, it means:
+
+#### Get the Big Picture
+
+Make sure you have a solid understanding of the project's 'big picture.' What is the project trying to accomplish overall? What are some big milestones that need to be accomplished by the end of the year and/or the end of the project? If you don't know or aren't sure, ask!
+
+#### Fill in the Details
+
+Once you understand the 'big picture' goals for the project, really work on developing your ability to think through the individual steps that need to occur for those big picture goals to be achieved. As an example, let's say that you know that one of the project goals is to create a participant/patient recruiting dashboard so that we can track our recruitment progress. What steps need to happen? Well, we need data from somewhere, we typically need to clean that data, we usually need to do some exploratory analysis of the data, and then we need to start drafting useful metrics that we can add to our dashboard.
+
+#### Make it Happen
+
+Once you've thought through the steps that need to occur, don't wait for someone to assign you a task. This is where you take the initiative to complete a task that you know needs to be completed without someone telling you. Having said that, there's nothing wrong with running it by other team members first to make sure you aren't about to start on something that will be a waste of your time.

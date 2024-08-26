@@ -1,0 +1,71 @@
+---
+lightbox: true
+---
+
+# IRB GRA Tasks {#sec-irb .unnumbered}
+
+### IRB Documents 
+Local copies of all IRB documents for the DETECT project are located in our SharePoint Document Library at [Documents/General/IRB Private](https://uthtmc.sharepoint.com/sites/SPHDETECT-RPC/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x0120004E8A92AA55795C42852C8A438D043D68&id=%2Fsites%2FSPHDETECT%2DRPC%2FShared%20Documents%2FDETECT%2DRPC%20R61%20R33%202022%2FIRB%20Private). You may need to read, copy, and/or update these files from time to time.  
+
+### iRIS 
+
+Virtually all IRB documentation will be submitted and stored in [UTHealth’s Integrated Research Information Software (iRIS)](https://iris.uth.tmc.edu/). If you have iRIS-related questions, you may contact the iRIS help line at [713-500-7960](tel:7135007960). 
+
+As part of your responsibilities as a GRA, you may or may not be asked to directly create or edit research protocols/documents in the iRIS system. After you sign in, you will land on the iRIS home screen. There can be multiple sections and studies listed on your iRIS home screen, but there should be a little pencil and paper icon on the left-hand side of every active study and study update that you have access to. Here is an example from Dr. Cannell’s iRIS home screen with the pencil and paper icon highlighted in red. 
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "iris.png"))
+```
+
+### IRB Change Requests and Amendments 
+
+One task that we commonly ask GRA’s to assist us with is submitting change requests and amendments. Change requests and amendments are typically used to let the IRB know that we intend to change something about the way we are conducting our study. For example, if we originally told the IRB that we would pay research participants $20 and we later decide to pay them $25, then we will need to submit that change to the IRB for approval.  
+
+To access a change request form, click on the pencil and paper icon for the study you are working on. The next screen should look something like this. 
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "change_request.png"))
+```
+
+One of the options will be `IRB – Change requests and Amendments` – click it. On the next page, click the `Add a New Form` button. Each protocol is somewhat unique, so it’s difficult to provide instructions on precisely what to type into the form. However, here are some notes that previous GRAs found useful about the DETECT project specifically. Please keep in mind that we can change any part of the form before our final submission. 
+
+  - Update number: If this is the first protocol update, then the update number will be 1. If it’s the second, then 2, and so on. 
+  - Short description. Just do your best to write something succinct and descriptive. 
+  - Does the revision to this protocol require a formal change to the title: Typically, not.  
+  - Memorial Hermann location questions: Typically, the answer to all of these is “No.” 
+  - Type of revisions: Select those that seem applicable. 
+  - Revision description and rationale: What changes do we want to make and why do we want to make them? 
+  - Who is initiating this change: Typically, Investigator-initiated. 
+  - Risk increase: Typically, the revision will not increase risk to participants. 
+  - Designated Department Approval/Head: Bijal Bala. 
+  - Funding: DETECT is federally funded by the National Institutes of Health (NIH) and the National Institute on Aging (NIA). 
+
+It can often be helpful to start by looking at other change requests that have been submitted and approved.  At the end of the day, we ask that you just fill out the form(s) to the best of your ability. When you are done, please email the PI and program manager to let them know. They will review all of the forms and likely make edits before the final submission. 
+
+### IRB Personnel Change Requests 
+
+Another common task we ask GRAs to help with is adding or removing personnel from the study.  
+
+To access a personnel change request form, click on the pencil and paper icon for the study you are working on. The next screen should look something like this. 
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "personnel_change.png"))
+```
+
+One of the options will be `IRB – Personnel Change Request Form` – click it. On the next page, click the `Add a New Form` button. Here are some notes for filling out the form that previous GRAs found useful. Please keep in mind that we can change any part of the form before our final submission. 
+
+  - Are you requesting a change to the principal investigator: No. 
+  - Are you requesting the addition of a co-investigator: Maybe. Ask the PI or Program Manager if you are unsure. 
+  - Are you requesting changes to key study personnel: This is the most common scenario. 
+  - To add co-investigators or key personnel, we will need to have their CITI certificate and they will have to complete a COI. Both of these documents are explained above. 
+  - Are you removing anyone from the study at this time: If we are, please just write their name and a brief explanation. For example, “Jane Smith. She graduated in May.” 
+  - Typically, we prefer not to add and remove personnel on the same form. So, if we need to add Jon Smith to the protocol and we need to remove Jane Smith from the protocol, we should do so using two separate forms. 
+  - Significant financial interest: This is almost always “No.” So, please select “No.” The PI will change it to “Yes” before the final submission if necessary. 
+  - Additional information: You can leave this blank. 
+  - Designated Department Approval/Head: Bijal Bala. 
+  - Funding: DETECT is federally funded by the National Institutes of Health (NIH) and the National Institute on Aging (NIA). 
+
+At the end of the day, we ask that you just fill out the form(s) to the best of your ability. When you are done, please email the PI and program manager to let them know. They will review all of the forms and likely make edits before the final submission. 

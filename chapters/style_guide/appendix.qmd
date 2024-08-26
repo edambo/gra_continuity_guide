@@ -1,0 +1,34 @@
+---
+lightbox: true
+---
+
+# Appendix {#sec-appendix .unnumbered}
+## Appendix A. Style Cheat Sheet
+```{r, out.width="300%"}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "style_cheat_sheet.png"))
+```
+
+## Appendix B. UTHealth Brand Standards
+### Logos
+[Here is a link to the online logo library](https://www.uth.edu/brand-standards/visual-identity/index.htm). 
+
+### Colors 
+[Here is a link the color standards page.](https://www.uth.edu/brand-standards/visual-identity/color) 
+```{r, out.width="300%"}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "ut_color_standards.png"))
+```
+
+### Typefaces 
+[Here is a link to the typefaces standards page](https://www.uth.edu/brand-standards/visual-identity/type). 
+
+We don’t have easy access to many of these fonts. Here are some that we can use:
+
+```{r, out.width="30%"}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "fonts.png"))
+```

@@ -1,0 +1,16 @@
+---
+lightbox: true
+---
+
+# Collaborating on Files {#sec-collab .unnumbered}
+Have you ever worked on a paper or report and had a folder on your computer that looked something like this?  
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "bad_folder.png"))
+``` 
+Saving a bunch of different versions of a file like this is a real mess, and it tends to get worse the more collaborators we have. What is contained in each document again? What order were the documents created in? What are the differences between the documents? Does the version of the paper that Doug emailed this morning contain the edits that Jason made yesterday? Versioning helps us get around these problems, and luckily, we have some good tools for versioning. Therefore, we should generally not be emailing files to each other. Instead, we should strive to work on Microsoft Office Documents online and use Git and GitHub for collaborative computer programming. There are links to instructions for both below. 
+
+[Please see the Using Word SOP for instructions on how to use Word’s versioning system (Excel and PowerPoint have similar systems).]{.mark} 
+
+[Please see for instructions for versioning other file types with Git and GitHub.]{.mark}   

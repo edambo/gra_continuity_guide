@@ -1,0 +1,37 @@
+project:
+  type: book
+
+book:
+  title: "GRA Continuity Guide"
+  author: "Cannell Research Team"
+  reader-mode: true
+
+  page-footer:
+    center: GRA Continuity Guide by the Cannell Research Team
+    background: black
+    foreground: white
+  cover-image: graphics/cover_image.png
+  chapters:
+    - index.qmd
+    - chapters/expectations.qmd
+    - chapters/onboarding.qmd
+    - part: "Style Guide"
+      chapters: 
+        - chapters/style_guide/overview.qmd
+        - chapters/style_guide/emphasizing_text.qmd
+        - chapters/style_guide/document_library_structure.qmd
+        - chapters/style_guide/collaboarating_on_files.qmd
+        - chapters/style_guide/appendix.qmd
+    - part: "GRA Tasks"
+      chapters: 
+        - chapters/tasks_irb.qmd
+        - chapters/tasks_data.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: sandbox
+  pdf:
+    documentclass: scrreprt
+

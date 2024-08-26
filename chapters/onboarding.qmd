@@ -1,0 +1,57 @@
+---
+lightbox: true
+---
+
+```{r, include=FALSE}
+library(here)
+```
+
+# Onboarding {#sec-onboarding .unnumbered}
+
+## Getting Paid 
+We all want to get paid! To make sure you do, please follow the steps outlined below:
+
+  1.  If you haven't already, set up your UTHealth Virtual Private Network (VPN) following these [instructions](https://inside.uth.edu/itsecurity/secops/vpn/index.htm).
+  2. Log into the VPN using your UTHealth credentials. 
+  3. Log into the [Employee Self-Service site](https://hrms.uth.tmc.edu/hprd/signon.html).
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "self_service_login.png"))
+```
+  4. On the next screen, click on the Time button.
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "time.png"))
+```
+  5. And then the Timesheet button.
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "timesheet_button.png"))
+```  
+  6. Finally, fill in your electronic timesheet. After your hours are entered, the program manager will approve them in the system, and you will get paid. 
+```{r}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "timesheet.png"))
+``` 
+
+If you have issues with any step in this process, you may reach out to the IT help desk at [713-486-4848](tel:7134864848).
+
+## IRB Requirements
+
+IRB stands for Institutional Review Board, and operating the IRB is one of the most important functions of our school’s Committee for the Protection of Human Subjects. As you might have guessed from the name, the IRB exists to review all research the school plans to conduct and make sure that it is in compliance with all federal, state, and ethical guidelines intended to protect human research participants. 
+
+One of the first things we will need to do when you join the team is add you to our IRB protocols. If you haven’t already done so, we will need you to complete two steps before we can add you: 
+
+### Complete CITI training
+CITI is a program that provides human subjects protection training to many universities across the country. To complete your CITI training: 
+
+  1. Follow the instructions on the [UTHealth IRB website](https://www.uth.edu/cphs/for-researchers/training.htm#CITI) to log on to CITI and register. 
+  2. After registering, complete the course called, “GCP – Social and Behavioral Research Best Practices for Clinical Research.” 
+  3. Download the Certificate of Completion to send to the study PI and program manager so that they may add you to the IRB. 
+
+### Complete Conflict of Interest (COI) Disclosure 
+Every UTHealth student, staff, and faculty member who participates in research needs to complete a COI annually. Please fill out your COI on the [UTHealth COI website](https://inside.uth.edu/coi/financial-disclosures.htm). You will also be able to look up frequently asked questions while you are there. Students very rarely have any financial conflicts of interest that they need to report, but feel free to reach out to [Dr. Cannell](mailto:Michael.B.Cannell@uth.tmc.edu) if you have any concerns.  
