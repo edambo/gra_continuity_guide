@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GRA Continuity Guide - Emphasizing Text</title>
+<title>GRA Continuity Guide - Structure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/style_guide/document_library_structure.html" rel="next">
-<link href="../../chapters/style_guide/overview.html" rel="prev">
+<link href="../../chapters/authoring_sops/tone.html" rel="next">
+<link href="../../chapters/authoring_sops/overview.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,9 +41,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -85,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/style_guide/overview.html">Style Guide</a></li><li class="breadcrumb-item"><a href="../../chapters/style_guide/emphasizing_text.html"><span class="chapter-title">Emphasizing Text</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/overview.html">Authoring SOPs</a></li><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/structure.html">Structure</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -164,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/style_guide/emphasizing_text.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Emphasizing Text</span></a>
+  <a href="../../chapters/style_guide/emphasizing_text.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Emphasizing Text</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -205,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/authoring_sops/structure.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/authoring_sops/structure.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Structure</span></a>
   </div>
 </li>
@@ -239,21 +236,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#application-names" id="toc-application-names" class="nav-link active" data-scroll-target="#application-names">Application Names</a></li>
-  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords">Keywords</a></li>
-  <li><a href="#programming-code" id="toc-programming-code" class="nav-link" data-scroll-target="#programming-code">Programming Code</a></li>
-  <li><a href="#clickable-operations-in-applications" id="toc-clickable-operations-in-applications" class="nav-link" data-scroll-target="#clickable-operations-in-applications">Clickable Operations in Applications</a></li>
-  <li><a href="#file-paths" id="toc-file-paths" class="nav-link" data-scroll-target="#file-paths">File Paths</a></li>
-  <li><a href="#file-and-folder-names" id="toc-file-and-folder-names" class="nav-link" data-scroll-target="#file-and-folder-names">File and Folder Names</a></li>
+  <li><a href="#paragraphs" id="toc-paragraphs" class="nav-link active" data-scroll-target="#paragraphs">Paragraphs</a></li>
+  <li><a href="#headers" id="toc-headers" class="nav-link" data-scroll-target="#headers">Headers</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/style_guide/overview.html">Style Guide</a></li><li class="breadcrumb-item"><a href="../../chapters/style_guide/emphasizing_text.html"><span class="chapter-title">Emphasizing Text</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/overview.html">Authoring SOPs</a></li><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/structure.html">Structure</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-emph_text" class="quarto-section-identifier"><span class="chapter-title">Emphasizing Text</span></span></h1>
+<h1 class="title"><span id="sec-as_structure" class="quarto-section-identifier">Structure</span></h1>
 </div>
 
 
@@ -270,73 +263,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Use the following conventions to emphasize keywords, concepts, code snippets, and other words or phrases that need to stand out or be emphasized.</p>
-<section id="application-names" class="level3">
-<h3 class="anchored" data-anchor-id="application-names">Application Names</h3>
-<p>Capitalize the names of applications.</p>
-<ul>
-<li>Do this: Microsoft Outlook, Outlook, Microsoft Planner, Planner.</li>
-<li>Do not do this: microsoft outlook, outlook, microsoft planner, planner.</li>
-</ul>
+<p>Each document should be about a single, definable topic, concept, or technology. For example, the document you are reading right now is about creating and editing other SOPs. Over time, we may find that what we originally thought of as a single, definable topic, concept, or technology is really composed of multiple different topics, concepts, or technologies that we need to break out into separate SOP documents. That’s OK! The goal here is to make it easy to use the SOPs, and by extension, to do good work.</p>
+<p>The rest of the structure section of this SOP gives step-by-step instructions for creating and authoring SOPs. It assumes that we are starting with the New SOP Template document located in Documents/SOPs. Note that this template has the margins set to narrow. We did this because, although these are Word documents, we anticipate that they will most often be viewed online. Using narrow margins gives them more of a webpage look and feel.</p>
+<p><strong>Step 1:</strong> Start by adding a rectangular-shaped picture to the top of the SOP document and center it. It makes the documents more appealing to look at and feel more like reading a webpage. - To do add a picture, click <code>Insert</code> &gt; <code>Picture</code>. There are multiple options including stock images that come with Microsoft Word. Other useful websites for finding free pictures include Google Images and <a href="https://unsplash.com/">Unsplash</a>.</p>
+<p><strong>Step 2:</strong> Immediately under the picture should be the document title. It should succinctly capture the theme of the document. Please apply the <code>Title</code> style to the title.</p>
+<p><strong>Step 3:</strong> Below the title, each page should have a table of contents (TOC). The TOC should be automatically generated and link to the document headers.</p>
+<p><strong>Step 4:</strong> Each page should also have an “Overview” section under the TOC. The Overview section should contain a brief description of the SOP’s topic. If we aren’t able to describe the topic in a sentence or two, that may be an indication that the page doesn’t have a single, high-level topic.</p>
+<p><strong>Step 5:</strong> Use the header styles (i.e., Heading 1, Heading 2, etc.) to break the document up into sections and subsections. Make sure to use heading styles as opposed to just changing the color and font manually. This is important for at least two reasons.</p>
+<ol type="1">
+<li>Using a heading style will create a clickable link in the TOC (new headings require updating the TOC).<br>
+</li>
+<li>If we decide to make changes to a heading style, all of the headings will automatically be updated to match.</li>
+</ol>
+<section id="paragraphs" class="level3">
+<h3 class="anchored" data-anchor-id="paragraphs">Paragraphs</h3>
+<p>New paragraphs, steps, and glossary items should not be indented. They should be aligned with the left margin of the document.</p>
 </section>
-<section id="keywords" class="level3">
-<h3 class="anchored" data-anchor-id="keywords">Keywords</h3>
-<p>Underline a keyword or phrase if it is a keyword or phrase that we would want to define in the glossary of the document (whether the document actually has a glossary or not).</p>
-<ul>
-<li><strong>Do this:</strong> <u>A standard operating procedure</u> (SOP) is…</li>
-<li><strong>Do not do this: A standard operating procedure (SOP)</strong> is…, A standard operating procedure (SOP) is…</li>
-</ul>
-<p><strong>Bold</strong> a keyword or phrase that we want to call attention to, but it is not necessarily a keyword or phrase that we would want to define in the glossary of the document (whether the document actually has a glossary or not).</p>
-<ul>
-<li><strong>Do this:</strong> **Step 1.**, ** Do this:**.</li>
-<li><strong>Do not do this:</strong> <u>Step 1.</u>, Do this.</li>
-</ul>
-<p>At times, we will also <em>Italicize</em> keywords or phrases that we want to call attention to, but are not necessarily keywords or phrases that we would want to define in the glossary of the document (whether the document actually has a glossary or not). In general, we will follow <a href="https://www.grammarly.com/blog/italics/">standard English grammar rules for using the italics typeface</a> (pay special attention to bullet 14). Further, “avoid using italics with other stylized typefaces, such as bold and underline. Since all three are designed to make words stand out, only one at a time is necessary.” (<a href="https://www.grammarly.com/blog/italics/">Ellis, 2022</a>)</p>
-<ul>
-<li><strong>Do this:</strong> We do not want to coerce participants into signing the consent form.</li>
-<li><strong>Do not do this:</strong> We do NOT/<strong>not</strong>/<em>not</em>/<strong><em>not</em></strong>/<u><strong><em>not</em></strong></u> want to coerce participants into signing the consent form.</li>
-</ul>
-</section>
-<section id="programming-code" class="level3">
-<h3 class="anchored" data-anchor-id="programming-code">Programming Code</h3>
-<p>Snippets of programming code should be written in the <code>Courier New</code> font with a light gray background. This matches the style convention used by many popular programming websites like GitHub and Stack Overflow. To make using this format easier, any document that was created by duplicating the New SOP Template will have a <code>code</code> option in the styles menu.</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../graphics/code_snippet.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../../graphics/code_snippet.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="351"></a></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li><strong>Do this:</strong> <code>utcNow()</code>, <code>dplyr::select()</code>.</li>
-<li><strong>Do not do this:</strong> utcNow(), <em>dplyr::select()</em>, <strong>dplyr::select()</strong>, “dplyr::select()”</li>
-</ul>
-</section>
-<section id="clickable-operations-in-applications" class="level3">
-<h3 class="anchored" data-anchor-id="clickable-operations-in-applications">Clickable Operations in Applications</h3>
-<p>In many of the applications we use, clickable steps or operations serve the same function as programming code. For example, in Microsoft word, we don’t type “bold(‘Do this’)”. Instead, we highlight the phrase “Do this” with our mouse and then click the <code>B</code> button in the toolbar. Then, Microsoft Word takes care of the programming behind the scenes for us. Therefore, clickable operations that need to be performed in an application should be written in same style used to write code. To make using this format easier, any document that was created by duplicating the New SOP Template will have a <code>code</code> option in the styles menu.</p>
-<ul>
-<li><strong>Do this:</strong> Click on the <code>Insert</code> tab…</li>
-<li><strong>Do not do this:</strong> Click on the <em>Insert</em>/INSERT/<strong>insert</strong>/<u>insert</u> tab.</li>
-</ul>
-</section>
-<section id="file-paths" class="level3">
-<h3 class="anchored" data-anchor-id="file-paths">File Paths</h3>
-<p>All file paths should be written in italic text with a light gray background. To make using this format easier, any document that was created by duplicating the New SOP Template will have a <code>File Paths</code> option in the styles menu. Additionally, the root directory (i.e., starting point) for all SharePoint/Teams documents is the Documents folder.</p>
-<ul>
-<li><strong>Do this:</strong> <code>Documents/General/SOPs/02 Style Guide.docx</code>.</li>
-<li><strong>Do not do this:</strong> “Documents/General/SOPs/02 Style Guide.docx”.</li>
-</ul>
-</section>
-<section id="file-and-folder-names" class="level3">
-<h3 class="anchored" data-anchor-id="file-and-folder-names">File and Folder Names</h3>
-<p>File and Folder names are essentially very short file paths. Therefore, file names and folder names should be written using the file paths guidelines from above. There is one exception to this rule. When creating a hyperlink to a file or folder, then the standard hyperlink style (i.e., <a href="">link</a>) should be used.</p>
-<ul>
-<li><strong>Do this:</strong> The <code>SOP</code> folder.</li>
-<li><strong>Do not do this:</strong> The “SOP” folder. The <strong>SOP</strong> folder.</li>
-</ul>
+<section id="headers" class="level3">
+<h3 class="anchored" data-anchor-id="headers">Headers</h3>
+<p>Each level one headings (i.e., <code>Heading 1</code>) should have a single, high-level theme, but not high-level enough to (currently) warrant its own SOP. Over time, we may find that what we originally thought of as a single, high-level theme was really more appropriate to break into multiple themes. That’s ok.</p>
+<p>Level one headings should be written in <a href="https://en.wikipedia.org/wiki/Title_case">title case</a>. All other headings should be written in <a href="https://en.wiktionary.org/wiki/sentence_case">sentence case</a>.</p>
 
 
 </section>
@@ -731,13 +677,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/style_guide/overview.html" class="pagination-link  aria-label=" style="" guide"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Style Guide</span>
+      <a href="../../chapters/authoring_sops/overview.html" class="pagination-link  aria-label=" &lt;span="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Overview</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/style_guide/document_library_structure.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>Document Library Structure</span>">
-        <span class="nav-page-text"><span class="chapter-title">Document Library Structure</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/authoring_sops/tone.html" class="pagination-link" aria-label="Tone">
+        <span class="nav-page-text">Tone</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -755,31 +701,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 

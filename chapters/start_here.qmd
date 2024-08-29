@@ -1,0 +1,27 @@
+# Getting Started with SOPs {#sec-sop_start}
+
+### Overview
+What are SOPs and why do we need them? The following quote provides a pretty useful answer. 
+
+> *A standard operating procedure (SOP) is a set of written instructions that describes the step-by-step process that must be taken to properly perform a routine activity. SOPs should be followed the exact same way every time to guarantee that the organization remains consistent and in compliance with industry regulations and business standards.* 
+>
+> *Standard operating procedures provide the policies, processes, and standards needed for the organization to succeed. They can benefit a business by reducing errors, increasing efficiencies and profitability, creating a safe work environment, and producing guidelines for how to resolve issues and overcome obstacles.* 
+
+<div style="text-align: right"> *[— Bush, 2021](https://www.techtarget.com/searchbusinessanalytics/definition/standard-operating-procedure-SOP)* </div> 
+
+Our team is large, diverse, and widely geographically distributed. These traits are extremely important strengths for our team, but they also make organizing and managing our activities more challenging than they would be if our team were small, homogenous, and we were all located down the hall from each other. As the quote highlights, the adoption and use of SOPs are one way we can produce consistent, high-quality work as often as possible. Another advantage of SOPs is that they should reduce our cognitive load. How do SOPs reduce our cognitive load?  
+
+  - First, they reduce the number of choices we need to make. For example, we don’t need to come up with our own answers to questions like, "where should I put this document?" or “what should I name this folder?”  
+  - Second, having the predetermined choices written down for reference reduces the amount of information we need to store in our intentional memory. For example, "OK, remember to always start these file names with the date written as yyyy-mm-dd". Although we don’t need to intentionally memorize them, these predetermined choices may eventually bleed over into our memory by accident through repetition.  
+  - Third, having uniformly styled content makes it easier for others -- including future us -- to find what we are looking for and use it. We can focus our brain power on the content instead of the style and/or organization of the content. 
+  
+### Feedback
+At the end of the day, the point of these SOPs is to make our lives easier and improve the quality and efficiency of our work. They can’t possibly achieve any of those objectives that if they aren’t used. Therefore, we want to encourage every member of the team to provide us with feedback. What is working? What isn’t working? What’s confusing? Possibly even some positive feedback about tools and processes that *are working* – We won’t hold our breath on that one 😂. The easiest way to send feedback is probably to just call [972-546-2925](tel:9725462925) or email [Brad Cannell](mailto:Michael.B.Cannell@uth.tmc.edu), who is currently responsible for maintaining the SharePoint site.  
+
+### Next Steps 
+At this point, you should know what SOPs are and why we are using them. Now what? Well, depending on your role on the team, you may rarely (if ever) use some of the SOPs. However, any time you engage in an activity that impacts our team or interact with a file that is shared on the SharePoint site, there is a good chance that there is an SOP – or soon will be an SOP -- that provides guidelines for that activity or interaction. 
+
+Even if you are a team member that rarely engages in an activity that is covered in an SOP, quickly skimming through some of them may provide you with useful information about the organization of the project that makes your life easier.  
+Finally, these SOPs are intended to be living documents that evolve to meet our changing needs over time. Therefore, it probably isn’t a good idea to assume that you never need to check an SOP that you’ve read in the past.  
+
+Thank you for your time and consideration! 

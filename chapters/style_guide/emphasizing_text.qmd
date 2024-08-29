@@ -2,7 +2,7 @@
 lightbox: true
 ---
 
-# Emphasizing Text {#sec-emph_text .unnumbered}
+# Emphasizing Text {#sec-emph_text}
 
 Use the following conventions to emphasize keywords, concepts, code snippets, and other words or phrases that need to stand out or be emphasized.
 

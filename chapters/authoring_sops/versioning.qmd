@@ -1,0 +1,44 @@
+---
+lightbox: true
+---
+# Versioning {#sec-versioning .unnumbered}
+Versioning is a great tool that OneNote, Word, and SharePoint pages all have. However, Word’s implementation of versioning is probably the easiest to work with. 
+
+### OneNote Online Versioning 
+To see previous versions of OneNote notes, click on the `View` tab in the ribbon and then click the `Page Versions` button. 
+```{r}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "onenote_versioning.png"))
+```
+
+### Word Online Versioning 
+To use versioning in Word online, click on the document title above the ribbon. Then, click `Version History`. 
+```{r}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "word_versioning.png"))
+```
+
+### Word for Mac Versioning 
+To use versioning in Word for Mac, click `File` > `Browse Version History`. 
+```{r}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "word_mac_versioning.png"))
+```
+
+### SharePoint Versioning 
+To see previous versions of SharePoint pages, click `Settings` > `Site contents` > `Site Pages`.  
+```{r}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "sharepoint_versioning.png"))
+```
+
+Find the page you want to see versions of. Then, click `Show more actions for this item` (three vertically stacked dots). Finally, click `Version history`. 
+```{r}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "sharepoint_versioning_2.png"))
+```

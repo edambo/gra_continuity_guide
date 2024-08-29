@@ -1,5 +1,4 @@
-# Overview {#sec-overview .unnumbered}
-
+# Overview {#sec-sg_overview}
 The ultimate goal of a style guide is to reduce cognitive load. Doing so should improve the quality and consistency of our work product and make our work lives easier and more efficient. How does a style guide do this?
 
 -   First, it reduces the number of choices we need to make as we are authoring content. For example, we don't need to come up with our own answers to questions like, "where should I put this document?" or "what should I name this folder?"

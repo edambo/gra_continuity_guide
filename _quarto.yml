@@ -15,6 +15,10 @@ book:
     - index.qmd
     - chapters/expectations.qmd
     - chapters/onboarding.qmd
+    - part: "GRA Tasks"
+      chapters: 
+        - chapters/gra_tasks/tasks_irb.qmd
+        - chapters/gra_tasks/tasks_data.qmd
     - part: "Style Guide"
       chapters: 
         - chapters/style_guide/overview.qmd
@@ -22,16 +26,23 @@ book:
         - chapters/style_guide/document_library_structure.qmd
         - chapters/style_guide/collaboarating_on_files.qmd
         - chapters/style_guide/appendix.qmd
-    - part: "GRA Tasks"
+    - chapters/start_here.qmd
+    - part: "Authoring SOPs"
       chapters: 
-        - chapters/tasks_irb.qmd
-        - chapters/tasks_data.qmd
+        - chapters/authoring_sops/overview.qmd
+        - chapters/authoring_sops/structure.qmd
+        - chapters/authoring_sops/tone.qmd
+        - chapters/authoring_sops/technologies.qmd
+        - chapters/authoring_sops/versioning.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme: sandbox
+    css: custom_styles.css
+    number-sections: false
   pdf:
     documentclass: scrreprt
+  
 

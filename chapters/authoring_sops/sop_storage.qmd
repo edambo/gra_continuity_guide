@@ -1,0 +1,5 @@
+---
+lightbox: true
+---
+
+# Where Should SOPs Storage {#sec-sop_storage .unnumbered}

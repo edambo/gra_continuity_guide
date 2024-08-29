@@ -1,0 +1,20 @@
+---
+lightbox: true
+---
+
+# Overview {#sec-as_overview}
+This part contains information about authoring SOPs. Any information we want to record about creating, editing, or deleting SOPs should be included in this part. Any information we want to record that is not exclusively about creating, editing, or deleting SOPs should not be included in this part. For example, even though SOPs use Microsoft Word, an SOP about using Microsoft Word should be its own separate part of the guide. 
+
+::: {.callout-note}
+We hope that all of our team members will use and provide feedback on our SOPs; however, most of our team members will never need to author SOPs. Most of you can safely ignore this part of the guide.
+:::
+
+Specifically, this document covers: 
+
+  - When and how should we author SOPs? 
+    - Please use the [New SOP Template](https://uthtmc.sharepoint.com/:w:/r/sites/SPHCannellResearch/Shared%20Documents/SOPs/SOP%20Template.docx?d=wdca3cccdecd5484cabeb5054608e5b33&csf=1&web=1&e=HiuhkD) to create a new SOP document. 
+    - Please see [the style guide part @sec-sg_overview] for general Word document formatting guidance. 
+  - What technologies (apps) should we use to write our SOPs? 
+    - Quick Summary: SOPs should be written using Microsoft Word documents. 
+  - Where should our SOPs be stored? 
+    - Quick Summary: SOPs should generally be stored in `Documents/SOPs`. 

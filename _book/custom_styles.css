@@ -1,0 +1,5 @@
+
+/* Remove chapter name display text for section references */
+a.quarto-xref>span {
+    display: none;
+}

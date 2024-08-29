@@ -2,7 +2,7 @@
 lightbox: true
 ---
 
-# Collaborating on Files {#sec-collab .unnumbered}
+# Collaborating on Files {#sec-collab}
 Have you ever worked on a paper or report and had a folder on your computer that looked something like this?  
 ```{r}
 #| echo: false

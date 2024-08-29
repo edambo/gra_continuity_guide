@@ -1,0 +1,6 @@
+# Tone {#sec-tone .unnumbered}
+
+The goal is for these SOPs to be user-friendly. As such: 
+
+  - Use informal, first-person language. 
+  - We will typically use the word "we" instead of the word "I". This project is a team effort. 

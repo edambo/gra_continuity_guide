@@ -1,4 +1,4 @@
-## Welcome and Overview {#sec-welcome .unnumbered}
+## Welcome and Overview {#sec-welcome}
 
 Welcome to the team!
 

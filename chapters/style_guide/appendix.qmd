@@ -2,7 +2,7 @@
 lightbox: true
 ---
 
-# Appendix {#sec-appendix .unnumbered}
+# Appendix {#sec-appendix}
 ## Appendix A. Style Cheat Sheet
 ```{r, out.width="300%"}
 #| echo: false

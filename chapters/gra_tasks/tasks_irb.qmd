@@ -2,7 +2,7 @@
 lightbox: true
 ---
 
-# IRB Tasks {#sec-irb .unnumbered}
+# IRB Tasks {#sec-irb}
 
 ### IRB Documents 
 Local copies of all IRB documents for the DETECT project are located in our SharePoint Document Library at [Documents/General/IRB Private](https://uthtmc.sharepoint.com/sites/SPHDETECT-RPC/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x0120004E8A92AA55795C42852C8A438D043D68&id=%2Fsites%2FSPHDETECT%2DRPC%2FShared%20Documents%2FDETECT%2DRPC%20R61%20R33%202022%2FIRB%20Private). You may need to read, copy, and/or update these files from time to time.  

@@ -1,4 +1,4 @@
-# Expectations and Advice {#sec-expectations .unnumbered}
+# Expectations and Advice {#sec-expectations}
 
 ## General Expectations
 

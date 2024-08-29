@@ -6,7 +6,7 @@ lightbox: true
 library(here)
 ```
 
-# Onboarding {#sec-onboarding .unnumbered}
+# Onboarding {#sec-onboarding}
 
 ## Getting Paid 
 We all want to get paid! To make sure you do, please follow the steps outlined below:

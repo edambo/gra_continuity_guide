@@ -1,4 +1,4 @@
-# Document Library Structure {#sec-doc_lib_structure .unnumbered}
+# Document Library Structure {#sec-doc_lib_structure}
 ### Folder Structure 
   - Each folder in the document library should generally be associated with a specific theme or topic, which may have sub-themes and subtopics.  
     - **Do this:** `IRB Documents` or `Budget Documents`. 

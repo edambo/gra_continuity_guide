@@ -1,0 +1,27 @@
+# Structure {#sec-as_structure .unnumbered}
+
+Each document should be about a single, definable topic, concept, or technology. For example, the document you are reading right now is about creating and editing other SOPs. Over time, we may find that what we originally thought of as a single, definable topic, concept, or technology is really composed of multiple different topics, concepts, or technologies that we need to break out into separate SOP documents. That's OK! The goal here is to make it easy to use the SOPs, and by extension, to do good work. 
+
+The rest of the structure section of this SOP gives step-by-step instructions for creating and authoring SOPs. It assumes that we are starting with the New SOP Template document located in Documents/SOPs. Note that this template has the margins set to narrow. We did this because, although these are Word documents, we anticipate that they will most often be viewed online. Using narrow margins gives them more of a webpage look and feel. 
+
+**Step 1:** Start by adding a rectangular-shaped picture to the top of the SOP document and center it. It makes the documents more appealing to look at and feel more like reading a webpage. 
+  - To do add a picture, click `Insert` > `Picture`. There are multiple options including stock images that come with Microsoft Word. Other useful websites for finding free pictures include Google Images and [Unsplash](https://unsplash.com/).   
+
+**Step 2:** Immediately under the picture should be the document title. It should succinctly capture the theme of the document. Please apply the `Title` style to the title. 
+
+**Step 3:** Below the title, each page should have a table of contents (TOC). The TOC should be automatically generated and link to the document headers. 
+
+**Step 4:** Each page should also have an “Overview” section under the TOC. The Overview section should contain a brief description of the SOP’s topic. If we aren't able to describe the topic in a sentence or two, that may be an indication that the page doesn't have a single, high-level topic. 
+
+**Step 5:** Use the header styles (i.e., Heading 1, Heading 2, etc.) to break the document up into sections and subsections. Make sure to use heading styles as opposed to just changing the color and font manually. This is important for at least two reasons. 
+
+  1. Using a heading style will create a clickable link in the TOC (new headings require updating the TOC).  
+  2. If we decide to make changes to a heading style, all of the headings will automatically be updated to match. 
+
+### Paragraphs 
+New paragraphs, steps, and glossary items should not be indented. They should be aligned with the left margin of the document. 
+
+### Headers 
+Each level one headings (i.e., `Heading 1`) should have a single, high-level theme, but not high-level enough to (currently) warrant its own SOP. Over time, we may find that what we originally thought of as a single, high-level theme was really more appropriate to break into multiple themes. That’s ok.  
+
+Level one headings should be written in [title case](https://en.wikipedia.org/wiki/Title_case). All other headings should be written in [sentence case](https://en.wiktionary.org/wiki/sentence_case). 

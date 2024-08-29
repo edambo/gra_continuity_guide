@@ -1,0 +1,55 @@
+---
+lightbox: true
+toc-depth: 4
+---
+
+# Word Processing {#sec-word .unnumbered}
+
+## Overview
+
+This SOP needs lots of improvement. Quickly jotting down some notes about choosing, and using, Word vs. Google Docs. As with all software choices, there is no advantage to getting caught up in brand loyalty. All else being equal, use the least complicated, most flexible tool.
+
+## Choosing a Word Processing Application
+
+For me, this is typically either Google Docs or Word. I prefer Google Docs in almost every way. Unfortunately, the rest of the world uses Word. Therefore, at the end of the day, it generally makes my life easier to use Word too.
+
+```{r}
+#| echo: false
+#| fig-align: "left"
+#| fig-cap: Pros and Cons of Word Processing Applications
+knitr::include_graphics(here::here("graphics", "word_gdocs.png"))
+```
+
+## Using Microsoft Word
+
+The sections below are about using MS Word after you've decided that it's the best tool for the job.
+
+#### Versioning
+
+See the versioning section of the Authoring SOPs SOP.
+
+Styles
+
+To copy styles from one Word document to another.
+
+To display the styles window click Format \> Style...
+
+Click the Organizer button
+
+Under the file on the right-hand side, click the Close File button
+
+Then click the Open File button
+
+Select the file that contains the style(s) you want to import
+
+Select the name(s) of the style(s) you want to import
+
+Click the Copy button
+
+Click Close
+
+Here is a useful post about sharing styles between Word documents.
+
+Adding shapes
+
+Adding shapes to a document works a lot better in the desktop version than the online version.

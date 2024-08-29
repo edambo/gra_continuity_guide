@@ -3,7 +3,7 @@ lightbox: true
 toc-depth: 5
 ---
 
-# Data Management and Analysis Tasks {#sec-data .unnumbered}
+# Data Management and Analysis Tasks {#sec-data}
 
 Most, if not all, of our research projects will involve the management and analysis of data. This section of the SOP includes information intended to make it easier for us to find and use the files we need to access, manage, and analyze project data. These files broadly include project data files, programming code files, and general project documentation files. All three will be covered below. However, there are a couple of general topics that we should familiarize ourselves with first. Namely, protective health information (PHI), reproducible research, and GitHub.
 
@@ -39,7 +39,7 @@ It further goes on to list 18 identifiers that can be used to identify the indiv
 We will strive to make our projects conform to best practices for promoting reproducible research. Many resources that describe what reproducible research is, and why it's important, are available on the internet, and we encourage you to look at some of them. Briefly, here is an excerpt from [Wikipedia](https://en.wikipedia.org/wiki/Reproducibility) that is good enough for our purposes:
 
 > *"The term reproducible research refers to the idea that scientific results should be documented in such a way that their deduction is fully transparent. This requires a detailed description of the methods used to obtain the data and making the full data set and the code to calculate the results easily accessible. This is the essential part of open science.*
-
+>
 > *To make any research project computationally reproducible, general practice involves all data and files being clearly separated, labelled, and documented. All operations should be fully documented and automated as much as practicable, avoiding manual intervention where feasible. The workflow should be designed as a sequence of smaller steps that are combined so that the intermediate outputs from one step directly feed as inputs into the next step. Version control should be used as it lets the history of the project be easily reviewed and allows for the documenting and tracking of changes in a transparent manner."*
 
 Because the data we work with almost always includes (PHI), we will not typically be able to make our data freely available to the general public. However, we will do our best to conform to the remaining elements of reproducible research described above. Two of the most important tools we will use to make our research more reproducible are [git](https://git-scm.com/) and [GitHub](https://github.com/).
