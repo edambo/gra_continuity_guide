@@ -1,0 +1,230 @@
+---
+lightbox: true
+toc-depth: 5
+---
+# Anatomy of the Internal Peer Code Review Form {#sec-anatomy}
+The Internal Peer Code Review Form is a Word-based Form that features content control fields and other advanced features that limit alteration to the form. The form should not receive substantial alteration to its structure during its completion. Instructions and details are provided within the form to minimize the need to reference this SOP during completion of the form.
+
+The Internal Peer Code Review Form is 18 Pages, organized into 5 main sections: Cover, Executive Summary, Table of Contents, Requester Provided Information, and Reviewer Feedback.
+
+### Cover
+The Cover is 1 page. It provides an organizational and administrative summary of the Internal Peer Code Review. This should be primarily completed by the requester. The reviewer is responsible for the “Reviewer”, “Reviewer Initials”, and “Review Date” fields. 
+
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_cover.png"))
+```
+
+##### Fields
+1. **\[Brief Goal Description]\:** This field is intended to title the peer review, with the title reflecting the goal of the code itself. This title should be informative but brief (< 20 characters).
+2. **\[URL of path of code file(s)]/:** This should be the path or URL that leads directly to the code files involved in the peer review. This text box allows for advanced formatting, such as hyperlinks and bullets. Code files should be on GitHub, unless otherwise specified by the task.
+3. **\[Requester]\:** This should be the first and last name of the requester. Note: This should be clear and reflect other study documents, such as if the author were submitting their name to a peer-reviewed journal publication. For example, Dr. Michael Bradley Cannell, who goes by his middle name, might write “M. Brad Cannell”, “Brad Cannell”, “Bradley Cannell”, or “Michael Bradley Cannell”, but should make the same choice for all uses of the form. In the case of similar names on a single team, care should be taken to ensure consistency and clarity while respecting individual identity.
+4. **\[REQ_INITIALS]\:** This should be the first and last initial of the requester.
+5. **\[Reviewer]\:** This should be the first and last name of the reviewer. Note: This should be clear and reflect other study documents, such as if the author were submitting their name to a peer-reviewed journal publication. For example, Dr. Michael Bradley Cannell, who goes by his middle name, might write “M. Brad Cannell”, “Brad Cannell”, “Bradley Cannell”, or “Michael Bradley Cannell”, but should make the same choice for all uses of the form. In the case of similar names on a single team, care should be taken to ensure consistency and clarity while respecting individual identity.
+6. **\[REV_INITIALS]\:** This should be the first and last initial of the reviewer.
+7. **\[Request Date]\:** This is the date that the requester submits the peer review request to the reviewer. It is content-locked as a date-picker object and will format dates in YYYY-MM-DD format.
+8. **\[Review Date]\:** This is the date that the reviewer submits their feedback on the peer review request to the requester. It is content-locked as a date-picker object and will format dates in YYYY-MM-DD format.
+9. **\[Review Number]\:** This should be a two-digit integer. See the definition of review number in the “Key Terms and Definitions” section of this document for further details.
+10. **\[Revision Number]\:** This should be a two-digit integer. See the definition of revision number in the “Key Terms and Definitions” section of this document for further details.
+11. **\[Repository Name]\:** This should be the name of the project repository on GitHub.
+12. **\[URL of Repository]\:** This should be the URL of the project repository on GitHub.
+13. **\[Overall Goal of task]\:** This should be the highest-level goal that the code was created to accomplish. This should be a single brief, focused sentence. 
+14. **Sub Goals:** This should be any major steps or other sub-goals related to the code being reviewed. 
+15. **Header:** The header uses document fields to automatically generate the appropriate file name. This field is locked to prevent modification but should allow the file name to be copied and pasted.
+16. **Footer:** The footer uses document fields to automatically generate values. This field is locked to prevent modification.
+
+### Executive Summary
+The Executive Summary section is 2 pages. It is intended to capture a high-level summary of key items in the review. This section should be brief and only contain the highest-level key items. The primary target audience for this section is project leadership¸ such as the PI. This section should be the last section completed.
+There are two subsections in this section, which are 1 page each: one for the requester to summarize changes since the last review of the same material, and one for the reviewer to summarize their feedback and make determinations.
+
+#### Revision Summary
+This section is intended to capture a high-level summary of any changes made since the last revision. It should be completed by the requester. It is intended to enable the reviewer to focus their review on these new items, and clearly identify changes when reviewing over multiple revisions. For the first revision, this should have a value of “N/A – First Request”. 
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_summary.png"))
+```
+ 
+##### Fields
+1. **Revision Summary:** This box is intended to capture the summary of changes made since the last review cycle, so that the reviewer may focus on these new details. It should be completed by the requester. This is a free-text box that allows for formatting, such as bullets. For the first revision, this should have a value of “N/A – First Request”.
+  
+#### Summary of Reviewer Feedback
+This section is intended to capture a high-level summary of the reviewer’s feedback to the requester. It should be completed by the reviewer. This will allow both the requester and project leadership to see the most pertinent items of this feedback. 
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_feedback.png"))
+```
+ 
+##### Fields
+1. **Overall Determination:** This field captures the reviewer’s overall determination for the code being reviewed. It has three options:
+    1. **Accept (as is, no revision):** This option indicates that the reviewer considers the code fully acceptable without any changes required. As such, the code meets the stated objectives and fits with project SOP requirements such as the [style guide](../style_guide/overview.html) or the [R4Epi Best Practices](https://www.r4epi.com/coding-best-practices.html).
+    2. **Minor Revision:** This option indicates that the reviewer considers the code mostly acceptable. Any requested changes are so minor that another review is not required. This includes things such as small typographical errors or changes to format to comply with the [style guide](../style_guide/overview.html) or the [R4Epi Best Practices](https://www.r4epi.com/coding-best-practices.html).
+    3. **Major Revision:** This option indicates that the reviewer believes the code requires significant changes before it can be accepted, which will require an additional review. This includes things such as converting repetitive code into helper functions, or a change to methods.
+2. **Meeting Required?:** This field captures the reviewer’s determination of the necessity of additional communication to provide feedback or clarify any of the reviewer’s remaining questions. It has three options:
+    1. **Meeting Needed:** This option indicates that the reviewer believes a synchronous discussion is necessary to answer remaining questions. This should be considered any time there is a possibility for follow-up questions, or if there are more than three questions. If the reviewer reached out to the requester for additional information and had a synchronized discussion (a meeting), this option should be selected to facilitate tracking of this time.
+    2. **No Meeting or Questions:** This option indicates that the reviewer has no remaining questions. It should only be selected if all information required for the reviewer to understand the code and the task parameters was provided in the Internal Peer Code Review Form or the code itself.
+    3. **Questions (No Meeting):** This option indicates that the reviewer has a few remaining questions, but answers are not likely to result in additional follow-up questions. If the reviewer reached out to the requester for additional information, but did not have a meeting, this option should be selected to facilitate tracking of this time.
+3. **Reviewer Notes:** This box is intended to capture the summary of the reviewer’s feedback. This is a free-text box that allows for formatting, such as bullets. This field should also indicate if a meeting has (or has not) already been held or scheduled, as well as any remaining questions.
+
+### Table of Contents
+The Table of Contents assists readers in locating specific information and fields. It is automatically generated by Word and should be updated by both the requester and the reviewer prior to each submission to ensure it is accurate. The Table of Contents reflects the headings that also appear in the Navigation Pane of Microsoft Windows 365. The Navigation Pane may be useful to users that wish to “jump” to a specific section of the document.
+
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_toc.png"))
+```
+
+### Requester Provided Information
+This section organizes information provided by the requester. It is a minimum of 9 pages, and contains 8 subsections: Requester Process Checklist, Versioning & Dependencies, Input Data Notes, Output Data notes, Test File Notes, Task Process Notes, Helper Function Notes, and Feedback Requests. It should be completed by the requester.
+
+#### Requester Process Checklist
+The Requester Process Checklist is a tool to assist the requester in completion of the form. It is a minimum of 2 pages in length (with page break). It should be completed by the requester.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_req_checklist.png"))
+```
+
+##### Fields
+1.	**Item:** Each item in the checklist has a checkbox and descriptive name. They are organized in an approximately chronological order to assist the requester in completion of the form.
+2.	**Comments:** Each item in the checklist has a comment box, which allows for formatting such as bullets. This space is intended to allow the requester to take notes or record other comments about each step of the form’s completion. This may include a mention that a certain process was blocked or otherwise unable to be completed due to a technical error.
+
+#### Versioning & Dependencies
+This section is meant to outline the versions used in developing the code. It is a minimum of 1 page in length (with page break). It should be completed by the requester. This section should include the version of the primary language (most likely R) and any imported packages/libraries. This information may be crucial to ensuring that code tests properly, as significant changes may occur between versions that would explain otherwise unpredictable changes in code behavior.
+
+In R, this information may be obtained by using the `sessionInfo()` function after all packages/libraries are loaded into the session namespace. The rare instance of a package/library that is required but does not have versioning information should also be mentioned. Additional rows may be added as required.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_version_dependencies.png"))
+```
+ 
+##### Fields
+1.	**Package:** This is the name of the library or package. The first line should be the primary coding language (most likely R).
+2.	**Version:** This should be the version of the package/library used when developing the code.
+
+#### Input Data Notes
+This section is meant to outline aspects of the input data that the code utilizes, if it exists. It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to be a high-level summary, not a full encapsulation of every aspect of the input data itself. This section is intended to be copied and pasted as many times as necessary, so each distinct input data file has its own distinct documentation.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_input_data.png"))
+```
+ 
+##### Fields
+1.	**\[Input Data File Name]\:** This is the name of the file. This should be based on how the file is discussed within this form and within the code being reviewed.
+2.	**\[URL or path of Input Data File]\:** This should be the direct link or path to the input file, so that the reviewer may also access this file in their review.
+3.	**Notes:** This section is intended to allow high-level summary notes about the input data. Suggested items include the source and structure of the input data, as well as how it was created (if it was created by the project). Screenshots and figures may be included, as appropriate.
+
+#### Output Data Notes
+This section is meant to outline aspects of the output data generated by the code, if it exists. It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to be a high-level summary, not a full encapsulation of every aspect of the output data itself. This section is intended to be copied and pasted as many times as necessary, so each distinct output data file has its own documentation.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_output_data.png"))
+```
+ 
+##### Fields
+1.	**\[Output Data File Name]\:** This is the name of the file. This should be based on how the file is discussed within this form and within the code being reviewed.
+2.	**\[URL or path of Output Data File]\:** This should be the direct link or path to the output file, so that the reviewer may also access this file in their review.
+3.	**Notes:** This section is intended to allow high-level summary notes about the output data. Suggested items include the source and structure of the output data file, what goal is met by this output data, and if it serves as a step within the process (rather than the final product). Screenshots and figures may be included, as appropriate.
+
+#### Test File Notes
+This section is meant to outline aspects of any test files for the code, if they exist. It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to be a high-level summary, not a full encapsulation of every aspect of the file(s). This section is intended to be copied and pasted as many times as necessary, so each distinct test file has its own documentation.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_test_file.png"))
+```
+ 
+##### Fields
+1.	**\[Test File Name]\:** This is the name of the file. This should be based on how the file is discussed within this form and within the code being reviewed.
+2.	**\[URL or path of Test File]\:** This should be the direct link or path to the test file, so that the reviewer may also access this file in their review.
+3.	**Notes:** This section is intended to allow high-level summary notes about the test file. Suggested items include a description of the “success” condition, and any detailed feedback or messages provided by the test file. Screenshots and figures may be included, as appropriate.
+
+#### Task Process Notes
+This section is meant to outline the process by which the code achieves its stated objectives. It is a minimum of 1 page in length (with page break). It should be completed by the requester. This section is a free-text box that allows for advanced formatting, such as bullets and figures. This field should primarily include identification of barriers that influenced the task solution, the requester’s thought process and/or logic that led them to the chosen solution, and other high-level items. Any included items should facilitate the reviewer in understanding the logic behind the code, and the logic behind how the code was written and organized. It is the primary “free-text” area of the requester’s documentation, where the requester may include any necessary documentation that does not neatly belong to any other section. It should be no longer than 1.5 pages in length. 
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_task_process.png"))
+```
+ 
+##### Fields
+1.	**Notes:** This section is intended to capture and organize the requester’s thought process and organization of their code. Suggested items include the overall thought process, any structure to the code files, and any significant barriers or other conditions that the reviewer should be aware of. Screenshots and figures may be included, as appropriate.
+
+#### Helper Function Notes
+This section is meant to identify and summarize any helper functions that were written and utilized within the code file(s). It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to flag these functions for the reviewer, so that the reviewer knows the specific use of this function in the code file and that it is included in the review request. It is not meant to duplicate the documentation that should be in the code for the helper function. However, it may prompt the requester to add missing documentation within their code before submitting their request. This section is intended to be copied and pasted as many times as necessary, so each distinct helper function has its own documentation.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_helper_functions.png"))
+```
+ 
+##### Fields
+1.	**\[Helper function name, as it appears in code]\:** This is the name of the function, as it appears in the code file.
+2.	**Input(s):** This should be a brief list of the inputs. This may be the specific inputs used in the code file, such as “continuous numeric variable column names, such as age”, or more general, such as “column names”. Full documentation of the inputs, such as constraints, should be within the code of the helper function itself.
+3.	**Output(s):** This should be a brief list of the outputs. This may be the specific outputs used in the code file, such as “values for summary statistics used in the stats tibble”, or more general, such as “summary statistics of mean and standard deviation”. Full documentation of the inputs, such as constraints, should be within the code of the helper function itself.
+4.	**How is this function used in the code being reviewed?:** This section is intended to provide a summary of how this helper function was used in the code. Suggested items include a rationale for the code’s creation. Screenshots and figures may be included, as appropriate.
+
+#### Feedback Requests
+This section serves to organize specific feedback requests from the requester. It is a minimum of 1 page in length (with page break). It should be completed by the requester. Any specific area that the requester wants more detailed or specific feedback from the reviewer should be included in this section. These requests should be as specific as possible, and as reasonable as possible. The table allows for the addition of as many rows as required. 
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_feedback_requests.png"))
+```
+ 
+##### Fields
+1.	**Line(s):** This column should include the specific lines of code relating to the request. The requester should not include the “entire document” in a single request.
+2.	**What do these lines of code achieve?:** This column should include a brief summary of what purpose the indicated lines serve. This will allow the reviewer to contextualize this piece of code quickly, without having to review the entire surrounding document to provide a focused review.
+3.	**Requests:** This column allows the requester to make a specific request to the reviewer. This may be relatively broad, such as “Can you think of a more concise way to achieve this?” or may be highly specific, such as “Does this spacing meet the SOP requirements for code formatting?”
+
+### Reviewer Feedback
+This section organizes information provided by the reviewer. It is a minimum of 5 pages, and contains 3 subsections: Reviewer Process Checklist, General Feedback, and File Specific Feedback. It should be completed by the reviewer. 
+
+#### Reviewer Process Checklist
+The Reviewer Process Checklist is a tool to assist the reviewer in completion of the form. It is a minimum of 2 pages in length (with page break). It should be completed by the reviewer.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_rev_checklist.png"))
+```
+ 
+##### Fields
+1.	**Item:** Each item in the checklist has a checkbox and descriptive name. They are organized in an approximately chronological order to assist the reviewer in completion of the form.
+2.	**Comments:** Each item in the checklist has a comment box, which allows for formatting such as bullets. This space is intended to allow the reviewer to take notes or record other comments about each step of the form’s completion. This may include a mention that a certain process was blocked or otherwise unable to be completed due to a technical error. 
+
+#### General Feedback
+This section is meant to capture general feedback relating to all code relating to the task. It is a minimum of 1 page in length (with page break). It should be completed by the reviewer. This should be high-level feedback. Each comment/suggestion should include a rationale, which is meant to ensure the reviewer presents a clear, objective, logical basis for their feedback. The requester should be able to understand the “why” underlying any suggestion posed by the reviewer. The table allows for additional rows to be added, as necessary. This section should never be blank, even if it’s only to state “good job, no changes needed” with a rationale of “all requirements met”.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_gen_feedback.png"))
+```
+ 
+##### Fields
+1. **Comments & Suggestions:** Each comment or suggestion should receive its own row. The comment or suggestion should be concise and clear.
+2. **Rationale:** Each comment or suggestion should have clear, objective, and logical reasoning behind it. This field should allow the requester to understand the “why” behind every comment or suggestion made by the reviewer.
+
+#### File Specific Feedback
+This section should form the bulk of the reviewer’s feedback. It is a minimum of 2 pages in length (with page breaks). It should be completed by the reviewer.  It is intended to collect specific feedback for each code file involved in the code review. This section is intended to be copied and pasted as many times as necessary, so each code file being reviewed has its own documentation. Tables allow for additional rows to be added, as necessary. Tables should not be left entirely blank.
+```{r, out.width="75%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_file_specific_feedback.png"))
+```
+ 
+##### Fields
+1.	**\[Name of the Code File Being Reviewed]\:** This is the name of the specific code file being reviewed in this section.
+2.	**Item:** Each item in the checklist has a checkbox and descriptive name. They are organized in an approximately chronological order to assist the reviewer in completion of the form.
+3.	**Comments:** Each item in the checklist has a comment box, which allows for formatting such as bullets. This space is intended to allow the reviewer to take notes or record other comments about each step of the form’s completion. This may include a mention that a certain process was blocked or otherwise unable to be completed due to a technical error.
+4.	**Comments & Suggestions:** Each comment or suggestion should receive its own row.
+5.	**Rationale:** Each comment or suggestion should have clear, objective, and logical reasoning behind it. This field should allow the requester to understand the “why” behind every comment or suggestion made by the reviewer.
+6.	**Line(s):** This column should include the specific lines of code relating to the reviewer’s feedback. This should never include the “entire document”.
+7.	**Issue:** This column should clearly outline the issue the reviewer has identified in these specific lines of code. This should be concise but specific.
+8.	**Suggestion(s):** This column should include the reviewer’s suggested modification, if one exists. Reviewers should try to make a suggestion whenever possible, though they are not required to write detailed code or otherwise “do it all themselves” to achieve this.
+9.	**Rationale:** The identified issue and suggestion(s) should have a clear, objective, and logical reasoning behind them. This field should allow the requester to understand the “why” behind every issue identified or suggested change presented by the reviewer.

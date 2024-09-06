@@ -60,5 +60,5 @@ CITI is a program that provides human subjects protection training to many unive
   2. After registering, complete the course called, “GCP – Social and Behavioral Research Best Practices for Clinical Research.” 
   3. Download the Certificate of Completion to send to the study PI and program manager so that they may add you to the IRB. 
 
-### Complete Conflict of Interest (COI) Disclosure 
+### Complete a Conflict of Interest (COI) Disclosure 
 Every UTHealth student, staff, and faculty member who participates in research needs to complete a COI annually. Please fill out your COI on the [UTHealth COI website](https://inside.uth.edu/coi/financial-disclosures.htm). You will also be able to look up frequently asked questions while you are there. Students very rarely have any financial conflicts of interest that they need to report, but feel free to reach out to [Dr. Cannell](mailto:Michael.B.Cannell@uth.tmc.edu) if you have any concerns.  

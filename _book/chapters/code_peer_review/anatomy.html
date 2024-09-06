@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GRA Continuity Guide - Anatomy of the Internal Peer Code Review Form</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/code_peer_review/example.html" rel="next">
+<link href="../../chapters/code_peer_review/process_overview.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../custom_styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/overview.html">Coding Peer Review SOP</a></li><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/anatomy.html"><span class="chapter-title">Anatomy of the Internal Peer Code Review Form</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">GRA Continuity Guide</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Welcome and Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/expectations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Expectations and Advice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Onboarding</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">GRA Tasks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/gra_tasks/tasks_irb.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IRB Tasks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/gra_tasks/tasks_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Management and Analysis Tasks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Style Guide</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/emphasizing_text.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Emphasizing Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/document_library_structure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Document Library Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/collaboarating_on_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Collaborating on Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/start_here.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Getting Started with SOPs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Authoring SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/tone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/technologies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/versioning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Versioning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Coding Peer Review SOP</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/key_terms.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Key Terms and Definitions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/required_software.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Required Software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/process_overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/anatomy.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Anatomy of the Internal Peer Code Review Form</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/example.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Step-by-Step Example</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#cover" id="toc-cover" class="nav-link active" data-scroll-target="#cover">Cover</a>
+  <ul>
+  <li><a href="#fields" id="toc-fields" class="nav-link" data-scroll-target="#fields">Fields</a></li>
+  </ul></li>
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link" data-scroll-target="#executive-summary">Executive Summary</a>
+  <ul>
+  <li><a href="#revision-summary" id="toc-revision-summary" class="nav-link" data-scroll-target="#revision-summary">Revision Summary</a>
+  <ul>
+  <li><a href="#fields-1" id="toc-fields-1" class="nav-link" data-scroll-target="#fields-1">Fields</a></li>
+  </ul></li>
+  <li><a href="#summary-of-reviewer-feedback" id="toc-summary-of-reviewer-feedback" class="nav-link" data-scroll-target="#summary-of-reviewer-feedback">Summary of Reviewer Feedback</a>
+  <ul>
+  <li><a href="#fields-2" id="toc-fields-2" class="nav-link" data-scroll-target="#fields-2">Fields</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#table-of-contents" id="toc-table-of-contents" class="nav-link" data-scroll-target="#table-of-contents">Table of Contents</a></li>
+  <li><a href="#requester-provided-information" id="toc-requester-provided-information" class="nav-link" data-scroll-target="#requester-provided-information">Requester Provided Information</a>
+  <ul>
+  <li><a href="#requester-process-checklist" id="toc-requester-process-checklist" class="nav-link" data-scroll-target="#requester-process-checklist">Requester Process Checklist</a>
+  <ul>
+  <li><a href="#fields-3" id="toc-fields-3" class="nav-link" data-scroll-target="#fields-3">Fields</a></li>
+  </ul></li>
+  <li><a href="#versioning-dependencies" id="toc-versioning-dependencies" class="nav-link" data-scroll-target="#versioning-dependencies">Versioning &amp; Dependencies</a>
+  <ul>
+  <li><a href="#fields-4" id="toc-fields-4" class="nav-link" data-scroll-target="#fields-4">Fields</a></li>
+  </ul></li>
+  <li><a href="#input-data-notes" id="toc-input-data-notes" class="nav-link" data-scroll-target="#input-data-notes">Input Data Notes</a>
+  <ul>
+  <li><a href="#fields-5" id="toc-fields-5" class="nav-link" data-scroll-target="#fields-5">Fields</a></li>
+  </ul></li>
+  <li><a href="#output-data-notes" id="toc-output-data-notes" class="nav-link" data-scroll-target="#output-data-notes">Output Data Notes</a>
+  <ul>
+  <li><a href="#fields-6" id="toc-fields-6" class="nav-link" data-scroll-target="#fields-6">Fields</a></li>
+  </ul></li>
+  <li><a href="#test-file-notes" id="toc-test-file-notes" class="nav-link" data-scroll-target="#test-file-notes">Test File Notes</a>
+  <ul>
+  <li><a href="#fields-7" id="toc-fields-7" class="nav-link" data-scroll-target="#fields-7">Fields</a></li>
+  </ul></li>
+  <li><a href="#task-process-notes" id="toc-task-process-notes" class="nav-link" data-scroll-target="#task-process-notes">Task Process Notes</a>
+  <ul>
+  <li><a href="#fields-8" id="toc-fields-8" class="nav-link" data-scroll-target="#fields-8">Fields</a></li>
+  </ul></li>
+  <li><a href="#helper-function-notes" id="toc-helper-function-notes" class="nav-link" data-scroll-target="#helper-function-notes">Helper Function Notes</a>
+  <ul>
+  <li><a href="#fields-9" id="toc-fields-9" class="nav-link" data-scroll-target="#fields-9">Fields</a></li>
+  </ul></li>
+  <li><a href="#feedback-requests" id="toc-feedback-requests" class="nav-link" data-scroll-target="#feedback-requests">Feedback Requests</a>
+  <ul>
+  <li><a href="#fields-10" id="toc-fields-10" class="nav-link" data-scroll-target="#fields-10">Fields</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#reviewer-feedback" id="toc-reviewer-feedback" class="nav-link" data-scroll-target="#reviewer-feedback">Reviewer Feedback</a>
+  <ul>
+  <li><a href="#reviewer-process-checklist" id="toc-reviewer-process-checklist" class="nav-link" data-scroll-target="#reviewer-process-checklist">Reviewer Process Checklist</a>
+  <ul>
+  <li><a href="#fields-11" id="toc-fields-11" class="nav-link" data-scroll-target="#fields-11">Fields</a></li>
+  </ul></li>
+  <li><a href="#general-feedback" id="toc-general-feedback" class="nav-link" data-scroll-target="#general-feedback">General Feedback</a>
+  <ul>
+  <li><a href="#fields-12" id="toc-fields-12" class="nav-link" data-scroll-target="#fields-12">Fields</a></li>
+  </ul></li>
+  <li><a href="#file-specific-feedback" id="toc-file-specific-feedback" class="nav-link" data-scroll-target="#file-specific-feedback">File Specific Feedback</a>
+  <ul>
+  <li><a href="#fields-13" id="toc-fields-13" class="nav-link" data-scroll-target="#fields-13">Fields</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/overview.html">Coding Peer Review SOP</a></li><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/anatomy.html"><span class="chapter-title">Anatomy of the Internal Peer Code Review Form</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-anatomy" class="quarto-section-identifier"><span class="chapter-title">Anatomy of the Internal Peer Code Review Form</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The Internal Peer Code Review Form is a Word-based Form that features content control fields and other advanced features that limit alteration to the form. The form should not receive substantial alteration to its structure during its completion. Instructions and details are provided within the form to minimize the need to reference this SOP during completion of the form.</p>
+<p>The Internal Peer Code Review Form is 18 Pages, organized into 5 main sections: Cover, Executive Summary, Table of Contents, Requester Provided Information, and Reviewer Feedback.</p>
+<section id="cover" class="level3">
+<h3 class="anchored" data-anchor-id="cover">Cover</h3>
+<p>The Cover is 1 page. It provides an organizational and administrative summary of the Internal Peer Code Review. This should be primarily completed by the requester. The reviewer is responsible for the “Reviewer”, “Reviewer Initials”, and “Review Date” fields.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_cover.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../../graphics/peer_review_cover.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields" class="level5">
+<h5 class="anchored" data-anchor-id="fields">Fields</h5>
+<ol type="1">
+<li><strong>[Brief Goal Description]:</strong> This field is intended to title the peer review, with the title reflecting the goal of the code itself. This title should be informative but brief (&lt; 20 characters).</li>
+<li><strong>[URL of path of code file(s)]/:</strong> This should be the path or URL that leads directly to the code files involved in the peer review. This text box allows for advanced formatting, such as hyperlinks and bullets. Code files should be on GitHub, unless otherwise specified by the task.</li>
+<li><strong>[Requester]:</strong> This should be the first and last name of the requester. Note: This should be clear and reflect other study documents, such as if the author were submitting their name to a peer-reviewed journal publication. For example, Dr.&nbsp;Michael Bradley Cannell, who goes by his middle name, might write “M. Brad Cannell”, “Brad Cannell”, “Bradley Cannell”, or “Michael Bradley Cannell”, but should make the same choice for all uses of the form. In the case of similar names on a single team, care should be taken to ensure consistency and clarity while respecting individual identity.</li>
+<li><strong>[REQ_INITIALS]:</strong> This should be the first and last initial of the requester.</li>
+<li><strong>[Reviewer]:</strong> This should be the first and last name of the reviewer. Note: This should be clear and reflect other study documents, such as if the author were submitting their name to a peer-reviewed journal publication. For example, Dr.&nbsp;Michael Bradley Cannell, who goes by his middle name, might write “M. Brad Cannell”, “Brad Cannell”, “Bradley Cannell”, or “Michael Bradley Cannell”, but should make the same choice for all uses of the form. In the case of similar names on a single team, care should be taken to ensure consistency and clarity while respecting individual identity.</li>
+<li><strong>[REV_INITIALS]:</strong> This should be the first and last initial of the reviewer.</li>
+<li><strong>[Request Date]:</strong> This is the date that the requester submits the peer review request to the reviewer. It is content-locked as a date-picker object and will format dates in YYYY-MM-DD format.</li>
+<li><strong>[Review Date]:</strong> This is the date that the reviewer submits their feedback on the peer review request to the requester. It is content-locked as a date-picker object and will format dates in YYYY-MM-DD format.</li>
+<li><strong>[Review Number]:</strong> This should be a two-digit integer. See the definition of review number in the “Key Terms and Definitions” section of this document for further details.</li>
+<li><strong>[Revision Number]:</strong> This should be a two-digit integer. See the definition of revision number in the “Key Terms and Definitions” section of this document for further details.</li>
+<li><strong>[Repository Name]:</strong> This should be the name of the project repository on GitHub.</li>
+<li><strong>[URL of Repository]:</strong> This should be the URL of the project repository on GitHub.</li>
+<li><strong>[Overall Goal of task]:</strong> This should be the highest-level goal that the code was created to accomplish. This should be a single brief, focused sentence.</li>
+<li><strong>Sub Goals:</strong> This should be any major steps or other sub-goals related to the code being reviewed.</li>
+<li><strong>Header:</strong> The header uses document fields to automatically generate the appropriate file name. This field is locked to prevent modification but should allow the file name to be copied and pasted.</li>
+<li><strong>Footer:</strong> The footer uses document fields to automatically generate values. This field is locked to prevent modification.</li>
+</ol>
+</section>
+</section>
+<section id="executive-summary" class="level3">
+<h3 class="anchored" data-anchor-id="executive-summary">Executive Summary</h3>
+<p>The Executive Summary section is 2 pages. It is intended to capture a high-level summary of key items in the review. This section should be brief and only contain the highest-level key items. The primary target audience for this section is project leadership¸ such as the PI. This section should be the last section completed. There are two subsections in this section, which are 1 page each: one for the requester to summarize changes since the last review of the same material, and one for the reviewer to summarize their feedback and make determinations.</p>
+<section id="revision-summary" class="level4">
+<h4 class="anchored" data-anchor-id="revision-summary">Revision Summary</h4>
+<p>This section is intended to capture a high-level summary of any changes made since the last revision. It should be completed by the requester. It is intended to enable the reviewer to focus their review on these new items, and clearly identify changes when reviewing over multiple revisions. For the first revision, this should have a value of “N/A – First Request”.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_summary.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../../graphics/peer_review_summary.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-1" class="level5">
+<h5 class="anchored" data-anchor-id="fields-1">Fields</h5>
+<ol type="1">
+<li><strong>Revision Summary:</strong> This box is intended to capture the summary of changes made since the last review cycle, so that the reviewer may focus on these new details. It should be completed by the requester. This is a free-text box that allows for formatting, such as bullets. For the first revision, this should have a value of “N/A – First Request”.</li>
+</ol>
+</section>
+</section>
+<section id="summary-of-reviewer-feedback" class="level4">
+<h4 class="anchored" data-anchor-id="summary-of-reviewer-feedback">Summary of Reviewer Feedback</h4>
+<p>This section is intended to capture a high-level summary of the reviewer’s feedback to the requester. It should be completed by the reviewer. This will allow both the requester and project leadership to see the most pertinent items of this feedback.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_feedback.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../../graphics/peer_review_feedback.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-2" class="level5">
+<h5 class="anchored" data-anchor-id="fields-2">Fields</h5>
+<ol type="1">
+<li><strong>Overall Determination:</strong> This field captures the reviewer’s overall determination for the code being reviewed. It has three options:
+<ol type="1">
+<li><strong>Accept (as is, no revision):</strong> This option indicates that the reviewer considers the code fully acceptable without any changes required. As such, the code meets the stated objectives and fits with project SOP requirements such as the <a href="../style_guide/overview.html">style guide</a> or the <a href="https://www.r4epi.com/coding-best-practices.html">R4Epi Best Practices</a>.</li>
+<li><strong>Minor Revision:</strong> This option indicates that the reviewer considers the code mostly acceptable. Any requested changes are so minor that another review is not required. This includes things such as small typographical errors or changes to format to comply with the <a href="../style_guide/overview.html">style guide</a> or the <a href="https://www.r4epi.com/coding-best-practices.html">R4Epi Best Practices</a>.</li>
+<li><strong>Major Revision:</strong> This option indicates that the reviewer believes the code requires significant changes before it can be accepted, which will require an additional review. This includes things such as converting repetitive code into helper functions, or a change to methods.</li>
+</ol></li>
+<li><strong>Meeting Required?:</strong> This field captures the reviewer’s determination of the necessity of additional communication to provide feedback or clarify any of the reviewer’s remaining questions. It has three options:
+<ol type="1">
+<li><strong>Meeting Needed:</strong> This option indicates that the reviewer believes a synchronous discussion is necessary to answer remaining questions. This should be considered any time there is a possibility for follow-up questions, or if there are more than three questions. If the reviewer reached out to the requester for additional information and had a synchronized discussion (a meeting), this option should be selected to facilitate tracking of this time.</li>
+<li><strong>No Meeting or Questions:</strong> This option indicates that the reviewer has no remaining questions. It should only be selected if all information required for the reviewer to understand the code and the task parameters was provided in the Internal Peer Code Review Form or the code itself.</li>
+<li><strong>Questions (No Meeting):</strong> This option indicates that the reviewer has a few remaining questions, but answers are not likely to result in additional follow-up questions. If the reviewer reached out to the requester for additional information, but did not have a meeting, this option should be selected to facilitate tracking of this time.</li>
+</ol></li>
+<li><strong>Reviewer Notes:</strong> This box is intended to capture the summary of the reviewer’s feedback. This is a free-text box that allows for formatting, such as bullets. This field should also indicate if a meeting has (or has not) already been held or scheduled, as well as any remaining questions.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="table-of-contents" class="level3">
+<h3 class="anchored" data-anchor-id="table-of-contents">Table of Contents</h3>
+<p>The Table of Contents assists readers in locating specific information and fields. It is automatically generated by Word and should be updated by both the requester and the reviewer prior to each submission to ensure it is accurate. The Table of Contents reflects the headings that also appear in the Navigation Pane of Microsoft Windows 365. The Navigation Pane may be useful to users that wish to “jump” to a specific section of the document.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_toc.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../../graphics/peer_review_toc.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="requester-provided-information" class="level3">
+<h3 class="anchored" data-anchor-id="requester-provided-information">Requester Provided Information</h3>
+<p>This section organizes information provided by the requester. It is a minimum of 9 pages, and contains 8 subsections: Requester Process Checklist, Versioning &amp; Dependencies, Input Data Notes, Output Data notes, Test File Notes, Task Process Notes, Helper Function Notes, and Feedback Requests. It should be completed by the requester.</p>
+<section id="requester-process-checklist" class="level4">
+<h4 class="anchored" data-anchor-id="requester-process-checklist">Requester Process Checklist</h4>
+<p>The Requester Process Checklist is a tool to assist the requester in completion of the form. It is a minimum of 2 pages in length (with page break). It should be completed by the requester.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_req_checklist.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../../graphics/peer_review_req_checklist.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-3" class="level5">
+<h5 class="anchored" data-anchor-id="fields-3">Fields</h5>
+<ol type="1">
+<li><strong>Item:</strong> Each item in the checklist has a checkbox and descriptive name. They are organized in an approximately chronological order to assist the requester in completion of the form.</li>
+<li><strong>Comments:</strong> Each item in the checklist has a comment box, which allows for formatting such as bullets. This space is intended to allow the requester to take notes or record other comments about each step of the form’s completion. This may include a mention that a certain process was blocked or otherwise unable to be completed due to a technical error.</li>
+</ol>
+</section>
+</section>
+<section id="versioning-dependencies" class="level4">
+<h4 class="anchored" data-anchor-id="versioning-dependencies">Versioning &amp; Dependencies</h4>
+<p>This section is meant to outline the versions used in developing the code. It is a minimum of 1 page in length (with page break). It should be completed by the requester. This section should include the version of the primary language (most likely R) and any imported packages/libraries. This information may be crucial to ensuring that code tests properly, as significant changes may occur between versions that would explain otherwise unpredictable changes in code behavior.</p>
+<p>In R, this information may be obtained by using the <code>sessionInfo()</code> function after all packages/libraries are loaded into the session namespace. The rare instance of a package/library that is required but does not have versioning information should also be mentioned. Additional rows may be added as required.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_version_dependencies.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="../../graphics/peer_review_version_dependencies.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-4" class="level5">
+<h5 class="anchored" data-anchor-id="fields-4">Fields</h5>
+<ol type="1">
+<li><strong>Package:</strong> This is the name of the library or package. The first line should be the primary coding language (most likely R).</li>
+<li><strong>Version:</strong> This should be the version of the package/library used when developing the code.</li>
+</ol>
+</section>
+</section>
+<section id="input-data-notes" class="level4">
+<h4 class="anchored" data-anchor-id="input-data-notes">Input Data Notes</h4>
+<p>This section is meant to outline aspects of the input data that the code utilizes, if it exists. It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to be a high-level summary, not a full encapsulation of every aspect of the input data itself. This section is intended to be copied and pasted as many times as necessary, so each distinct input data file has its own distinct documentation.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_input_data.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="../../graphics/peer_review_input_data.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-5" class="level5">
+<h5 class="anchored" data-anchor-id="fields-5">Fields</h5>
+<ol type="1">
+<li><strong>[Input Data File Name]:</strong> This is the name of the file. This should be based on how the file is discussed within this form and within the code being reviewed.</li>
+<li><strong>[URL or path of Input Data File]:</strong> This should be the direct link or path to the input file, so that the reviewer may also access this file in their review.</li>
+<li><strong>Notes:</strong> This section is intended to allow high-level summary notes about the input data. Suggested items include the source and structure of the input data, as well as how it was created (if it was created by the project). Screenshots and figures may be included, as appropriate.</li>
+</ol>
+</section>
+</section>
+<section id="output-data-notes" class="level4">
+<h4 class="anchored" data-anchor-id="output-data-notes">Output Data Notes</h4>
+<p>This section is meant to outline aspects of the output data generated by the code, if it exists. It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to be a high-level summary, not a full encapsulation of every aspect of the output data itself. This section is intended to be copied and pasted as many times as necessary, so each distinct output data file has its own documentation.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_output_data.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="../../graphics/peer_review_output_data.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-6" class="level5">
+<h5 class="anchored" data-anchor-id="fields-6">Fields</h5>
+<ol type="1">
+<li><strong>[Output Data File Name]:</strong> This is the name of the file. This should be based on how the file is discussed within this form and within the code being reviewed.</li>
+<li><strong>[URL or path of Output Data File]:</strong> This should be the direct link or path to the output file, so that the reviewer may also access this file in their review.</li>
+<li><strong>Notes:</strong> This section is intended to allow high-level summary notes about the output data. Suggested items include the source and structure of the output data file, what goal is met by this output data, and if it serves as a step within the process (rather than the final product). Screenshots and figures may be included, as appropriate.</li>
+</ol>
+</section>
+</section>
+<section id="test-file-notes" class="level4">
+<h4 class="anchored" data-anchor-id="test-file-notes">Test File Notes</h4>
+<p>This section is meant to outline aspects of any test files for the code, if they exist. It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to be a high-level summary, not a full encapsulation of every aspect of the file(s). This section is intended to be copied and pasted as many times as necessary, so each distinct test file has its own documentation.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_test_file.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="../../graphics/peer_review_test_file.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-7" class="level5">
+<h5 class="anchored" data-anchor-id="fields-7">Fields</h5>
+<ol type="1">
+<li><strong>[Test File Name]:</strong> This is the name of the file. This should be based on how the file is discussed within this form and within the code being reviewed.</li>
+<li><strong>[URL or path of Test File]:</strong> This should be the direct link or path to the test file, so that the reviewer may also access this file in their review.</li>
+<li><strong>Notes:</strong> This section is intended to allow high-level summary notes about the test file. Suggested items include a description of the “success” condition, and any detailed feedback or messages provided by the test file. Screenshots and figures may be included, as appropriate.</li>
+</ol>
+</section>
+</section>
+<section id="task-process-notes" class="level4">
+<h4 class="anchored" data-anchor-id="task-process-notes">Task Process Notes</h4>
+<p>This section is meant to outline the process by which the code achieves its stated objectives. It is a minimum of 1 page in length (with page break). It should be completed by the requester. This section is a free-text box that allows for advanced formatting, such as bullets and figures. This field should primarily include identification of barriers that influenced the task solution, the requester’s thought process and/or logic that led them to the chosen solution, and other high-level items. Any included items should facilitate the reviewer in understanding the logic behind the code, and the logic behind how the code was written and organized. It is the primary “free-text” area of the requester’s documentation, where the requester may include any necessary documentation that does not neatly belong to any other section. It should be no longer than 1.5 pages in length.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_task_process.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="../../graphics/peer_review_task_process.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-8" class="level5">
+<h5 class="anchored" data-anchor-id="fields-8">Fields</h5>
+<ol type="1">
+<li><strong>Notes:</strong> This section is intended to capture and organize the requester’s thought process and organization of their code. Suggested items include the overall thought process, any structure to the code files, and any significant barriers or other conditions that the reviewer should be aware of. Screenshots and figures may be included, as appropriate.</li>
+</ol>
+</section>
+</section>
+<section id="helper-function-notes" class="level4">
+<h4 class="anchored" data-anchor-id="helper-function-notes">Helper Function Notes</h4>
+<p>This section is meant to identify and summarize any helper functions that were written and utilized within the code file(s). It is a minimum of 1 page in length (with page break). It should be completed by the requester. It is intended to flag these functions for the reviewer, so that the reviewer knows the specific use of this function in the code file and that it is included in the review request. It is not meant to duplicate the documentation that should be in the code for the helper function. However, it may prompt the requester to add missing documentation within their code before submitting their request. This section is intended to be copied and pasted as many times as necessary, so each distinct helper function has its own documentation.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_helper_functions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="../../graphics/peer_review_helper_functions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-9" class="level5">
+<h5 class="anchored" data-anchor-id="fields-9">Fields</h5>
+<ol type="1">
+<li><strong>[Helper function name, as it appears in code]:</strong> This is the name of the function, as it appears in the code file.</li>
+<li><strong>Input(s):</strong> This should be a brief list of the inputs. This may be the specific inputs used in the code file, such as “continuous numeric variable column names, such as age”, or more general, such as “column names”. Full documentation of the inputs, such as constraints, should be within the code of the helper function itself.</li>
+<li><strong>Output(s):</strong> This should be a brief list of the outputs. This may be the specific outputs used in the code file, such as “values for summary statistics used in the stats tibble”, or more general, such as “summary statistics of mean and standard deviation”. Full documentation of the inputs, such as constraints, should be within the code of the helper function itself.</li>
+<li><strong>How is this function used in the code being reviewed?:</strong> This section is intended to provide a summary of how this helper function was used in the code. Suggested items include a rationale for the code’s creation. Screenshots and figures may be included, as appropriate.</li>
+</ol>
+</section>
+</section>
+<section id="feedback-requests" class="level4">
+<h4 class="anchored" data-anchor-id="feedback-requests">Feedback Requests</h4>
+<p>This section serves to organize specific feedback requests from the requester. It is a minimum of 1 page in length (with page break). It should be completed by the requester. Any specific area that the requester wants more detailed or specific feedback from the reviewer should be included in this section. These requests should be as specific as possible, and as reasonable as possible. The table allows for the addition of as many rows as required.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_feedback_requests.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="../../graphics/peer_review_feedback_requests.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-10" class="level5">
+<h5 class="anchored" data-anchor-id="fields-10">Fields</h5>
+<ol type="1">
+<li><strong>Line(s):</strong> This column should include the specific lines of code relating to the request. The requester should not include the “entire document” in a single request.</li>
+<li><strong>What do these lines of code achieve?:</strong> This column should include a brief summary of what purpose the indicated lines serve. This will allow the reviewer to contextualize this piece of code quickly, without having to review the entire surrounding document to provide a focused review.</li>
+<li><strong>Requests:</strong> This column allows the requester to make a specific request to the reviewer. This may be relatively broad, such as “Can you think of a more concise way to achieve this?” or may be highly specific, such as “Does this spacing meet the SOP requirements for code formatting?”</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="reviewer-feedback" class="level3">
+<h3 class="anchored" data-anchor-id="reviewer-feedback">Reviewer Feedback</h3>
+<p>This section organizes information provided by the reviewer. It is a minimum of 5 pages, and contains 3 subsections: Reviewer Process Checklist, General Feedback, and File Specific Feedback. It should be completed by the reviewer.</p>
+<section id="reviewer-process-checklist" class="level4">
+<h4 class="anchored" data-anchor-id="reviewer-process-checklist">Reviewer Process Checklist</h4>
+<p>The Reviewer Process Checklist is a tool to assist the reviewer in completion of the form. It is a minimum of 2 pages in length (with page break). It should be completed by the reviewer.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_rev_checklist.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="../../graphics/peer_review_rev_checklist.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-11" class="level5">
+<h5 class="anchored" data-anchor-id="fields-11">Fields</h5>
+<ol type="1">
+<li><strong>Item:</strong> Each item in the checklist has a checkbox and descriptive name. They are organized in an approximately chronological order to assist the reviewer in completion of the form.</li>
+<li><strong>Comments:</strong> Each item in the checklist has a comment box, which allows for formatting such as bullets. This space is intended to allow the reviewer to take notes or record other comments about each step of the form’s completion. This may include a mention that a certain process was blocked or otherwise unable to be completed due to a technical error. </li>
+</ol>
+</section>
+</section>
+<section id="general-feedback" class="level4">
+<h4 class="anchored" data-anchor-id="general-feedback">General Feedback</h4>
+<p>This section is meant to capture general feedback relating to all code relating to the task. It is a minimum of 1 page in length (with page break). It should be completed by the reviewer. This should be high-level feedback. Each comment/suggestion should include a rationale, which is meant to ensure the reviewer presents a clear, objective, logical basis for their feedback. The requester should be able to understand the “why” underlying any suggestion posed by the reviewer. The table allows for additional rows to be added, as necessary. This section should never be blank, even if it’s only to state “good job, no changes needed” with a rationale of “all requirements met”.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_gen_feedback.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="../../graphics/peer_review_gen_feedback.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-12" class="level5">
+<h5 class="anchored" data-anchor-id="fields-12">Fields</h5>
+<ol type="1">
+<li><strong>Comments &amp; Suggestions:</strong> Each comment or suggestion should receive its own row. The comment or suggestion should be concise and clear.</li>
+<li><strong>Rationale:</strong> Each comment or suggestion should have clear, objective, and logical reasoning behind it. This field should allow the requester to understand the “why” behind every comment or suggestion made by the reviewer.</li>
+</ol>
+</section>
+</section>
+<section id="file-specific-feedback" class="level4">
+<h4 class="anchored" data-anchor-id="file-specific-feedback">File Specific Feedback</h4>
+<p>This section should form the bulk of the reviewer’s feedback. It is a minimum of 2 pages in length (with page breaks). It should be completed by the reviewer. It is intended to collect specific feedback for each code file involved in the code review. This section is intended to be copied and pasted as many times as necessary, so each code file being reviewed has its own documentation. Tables allow for additional rows to be added, as necessary. Tables should not be left entirely blank.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_file_specific_feedback.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="../../graphics/peer_review_file_specific_feedback.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="fields-13" class="level5">
+<h5 class="anchored" data-anchor-id="fields-13">Fields</h5>
+<ol type="1">
+<li><strong>[Name of the Code File Being Reviewed]:</strong> This is the name of the specific code file being reviewed in this section.</li>
+<li><strong>Item:</strong> Each item in the checklist has a checkbox and descriptive name. They are organized in an approximately chronological order to assist the reviewer in completion of the form.</li>
+<li><strong>Comments:</strong> Each item in the checklist has a comment box, which allows for formatting such as bullets. This space is intended to allow the reviewer to take notes or record other comments about each step of the form’s completion. This may include a mention that a certain process was blocked or otherwise unable to be completed due to a technical error.</li>
+<li><strong>Comments &amp; Suggestions:</strong> Each comment or suggestion should receive its own row.</li>
+<li><strong>Rationale:</strong> Each comment or suggestion should have clear, objective, and logical reasoning behind it. This field should allow the requester to understand the “why” behind every comment or suggestion made by the reviewer.</li>
+<li><strong>Line(s):</strong> This column should include the specific lines of code relating to the reviewer’s feedback. This should never include the “entire document”.</li>
+<li><strong>Issue:</strong> This column should clearly outline the issue the reviewer has identified in these specific lines of code. This should be concise but specific.</li>
+<li><strong>Suggestion(s):</strong> This column should include the reviewer’s suggested modification, if one exists. Reviewers should try to make a suggestion whenever possible, though they are not required to write detailed code or otherwise “do it all themselves” to achieve this.</li>
+<li><strong>Rationale:</strong> The identified issue and suggestion(s) should have a clear, objective, and logical reasoning behind them. This field should allow the requester to understand the “why” behind every issue identified or suggested change presented by the reviewer.</li>
+</ol>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/code_peer_review/process_overview.html" class="pagination-link  aria-label=" &lt;span="" overview&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Process Overview</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../chapters/code_peer_review/example.html" class="pagination-link" aria-label="<span class='chapter-number'>19</span>&nbsp; <span class='chapter-title'>Step-by-Step Example</span>">
+        <span class="nav-page-text"><span class="chapter-title">Step-by-Step Example</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>GRA Continuity Guide by the Cannell Research Team</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":false,"closeEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>

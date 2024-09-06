@@ -1,0 +1,39 @@
+# Key Terms and Definitions 
+
+**Requester:** The individual(s) requesting peer review. This should be the individual that wrote the original code. 
+
+The requester is responsible for: 
+
+  1. Selecting a reviewer 
+  2. Notifying the selected reviewer of the request to engage in the peer review process 
+  3. Completing all fields in the Requester Provided Information Section of the Internal Peer Code Review Form, in addition to items in the Cover, Executive Summary, and other sections as appropriate 
+  4. Ensuring that the completed form is saved to the appropriate folder on SharePoint, with the required file name format 
+  5. Notifying the reviewer that the form is ready for review as soon as it is ready 
+  6. Responding to reviewer feedback 
+
+**Reviewer:** The individual(s) reviewing the code in the peer review process. This should not be someone who was involved in the original creation of the code, if at all possible. 
+
+The reviewer is responsible for: 
+
+  1. Determining if they will be able to complete a peer review within a reasonable reply time frame 
+  2. Notifying the requester as soon as reasonably possible if they are either able or unable to complete the peer review within a reasonable reply time frame 
+  3. Performing a review of the code based on the information provided by the requester 
+  4. Completing all fields in the Reviewer Feedback Section of the Internal Peer Code Review Form, in addition to items in the Cover, Executive Summary, and other sections as appropriate 
+  5. Ensuring that the completed form is saved to the appropriate folder on SharePoint, with the required file name format 
+  6. Notifying the requester that the form is completed and ready for their review as soon as it is ready 
+  7. Reaching out to the requester for any additional information, such as clarifying questions. 
+  8. Documenting any clarifying questions, meetings, or other relevant items in the Internal Peer Code Review Form. This includes documenting any remaining questions, concerns, or meeting requests. 
+
+**Reasonable Reply Time Frame:** This is the expected timeframe between the time the requester notifies the reviewer, and the time the reviewer completes their review and notifies the requester. This is generally expected to take no more than 5-7 business days (approximately 1 calendar week), unless otherwise agreed. Replies should be completed as soon as reasonably possible. 
+
+**Review Number:** A positive integer (whole number) which indicates the “number” of the peer review. This is an arbitrary number, which increments with each request. As such, Review Number 01 should refer to the first peer review for the project, Review Number 02 the second, and so on. This number has no specific meaning beyond facilitating a somewhat-chronological organization. 
+
+**Revision Number:** A positive integer (whole number) which indicates the “round” of the peer review for a specific request. This is intended to record each distinct “back and forth” between requester and reviewer and increment accordingly. As such, Revision Number 01 should refer to the first request and review for a specific request, Revision Number 02 the second, and so on. It should be uncommon for a revision number to be greater than 02. 
+
+**Repository:** This is the name of the GitHub repository where the code is stored. This should almost always be a personal fork of the project repository. 
+
+**File Name Protocol:** This is the expected file name convention for Internal Peer Code Review Forms. All forms should be saved in the designated folder. Names should follow the following formula: 
+
+`p2p_code_[2 digit review#]_[2 digit revision#]_[repository name]_[brief goal description]_[requesters initials]_[reviewers initials].docx` 
+
+Values should be in lowercase and avoid special characters (except the included underscores). This format (with the exception of enforcing lowercase) is automatically generated in the header of the form through completion of the cover. 

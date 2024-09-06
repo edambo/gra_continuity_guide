@@ -34,6 +34,14 @@ book:
         - chapters/authoring_sops/tone.qmd
         - chapters/authoring_sops/technologies.qmd
         - chapters/authoring_sops/versioning.qmd
+    - part: "Coding Peer Review SOP"
+      chapters: 
+        - chapters/code_peer_review/overview.qmd
+        - chapters/code_peer_review/key_terms.qmd
+        - chapters/code_peer_review/required_software.qmd
+        - chapters/code_peer_review/process_overview.qmd
+        - chapters/code_peer_review/anatomy.qmd
+        - chapters/code_peer_review/example.qmd
 
 bibliography: references.bib
 

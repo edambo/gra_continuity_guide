@@ -1,7 +1,7 @@
 ---
 lightbox: true
 ---
-# Versioning {#sec-versioning .unnumbered}
+# Versioning
 Versioning is a great tool that OneNote, Word, and SharePoint pages all have. However, Word’s implementation of versioning is probably the easiest to work with. 
 
 ### OneNote Online Versioning 

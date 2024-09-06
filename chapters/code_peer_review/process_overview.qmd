@@ -1,0 +1,41 @@
+# Process Overview 
+
+The overall Internal Peer Code Review process has several uniform steps and expectations: 
+
+1. The requester either identifies a need for an Internal Peer Code Review or is requested to do so by project leadership. 
+
+2. The requester selects a suitable reviewer from their peers. The following points are intended to be guidance, rather than hard requirements: 
+    1. It is recommended that both the requester and the reviewer have similar coding experience levels, or that the reviewer has greater coding experience. This is to ensure that the requester receives suitable feedback that provides a learning opportunity.  
+    2. The requester should keep the reviewer’s coding skill in mind when completing the form; reviewers with less coding experience will likely require more detailed explanations to understand why certain choices were made in the code. This may include the choice to use a particular package/library or method. 
+    3. The requester should contact a potential reviewer in advance of completing their request whenever possible. This is to ensure that the chosen reviewer will be able to complete the review in a reasonable reply time frame, and also allow the requester to tailor the level of detail in their request documentation to their chosen reviewer.   
+
+3. The requester completes their portion of the Internal Peer Code Review Form: 
+    1. The requester creates a copy of the Internal Peer Code Review Form template document. 
+
+    2. The requester completes the cover and Requester Provided Information sections of the Internal Peer Code Review Form. This also includes the cover, executive summary, and other sections as appropriate. 
+
+    3. The requester verifies that the file name generated in the header matches the File Name Protocol defined in the [Key Terms and Definitions section](../code_peer_review/key_terms.html) of this document. The requester performs any required modifications (such as conversion to lowercase) and saves the file with the appropriate file name. 
+
+    4. The requester uploads this form to the designated SharePoint folder, if it is not already saved or created in that location. 
+
+4. The requester notifies the reviewer that the Requester portion of the Internal Peer Code Review Form is complete. The requester should perform this notification via UTHealth email. A direct link to the relevant Internal Peer Code Review Form on SharePoint should be included. 
+
+5. The reviewer completes the request in a reasonable reply time frame. 
+    1. If the reviewer is unable to complete the review in a reasonable reply time frame, they should inform the requester as soon as possible. 
+    2. The reviewer reviews all code and documentation provided by the requester. 
+
+    3. The reviewer reaches out to the requester with any questions or additional items needed to complete the review. 
+
+    4. The reviewer completes all Reviewer Feedback sections of the Internal Peer Code Review Form. This also includes the cover, executive summary, and other sections as appropriate. 
+
+6. The reviewer notifies the requester that the Internal Peer Code Review Form is complete. The reviewer should perform this notification via UTHealth email. A direct link to the relevant Internal Peer Code Review Form on SharePoint should be included. 
+
+7. The requester reviews the feedback given by the reviewer and makes any modifications that are required. 
+
+::: {.callout-note}
+This process should be completed as many times as necessary to achieve a satisfactory final product; each revision cycle requires the completion of a new Internal Peer Code Review Form, with the revision number iterating by 1. It should be rare for a revision number to be greater than 02. Documentation of prior revisions may be referenced or used as a template, so long as it is appropriately updated to reflect the relevant changes. 
+:::
+
+See [Anatomy of the Internal Peer Code Review Form section](../code_peer_review/anatomy.html) for further details about individual portions of the Internal Peer Code Review form.  
+
+See the [Step-by-Step Example section](../code_peer_review/example.html) at the end of this part for a Step-by-Step walkthrough of this process in a real-world example. 

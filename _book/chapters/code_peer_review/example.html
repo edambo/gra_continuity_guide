@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GRA Continuity Guide - Step-by-Step Example</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/code_peer_review/anatomy.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../custom_styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/overview.html">Coding Peer Review SOP</a></li><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/example.html"><span class="chapter-title">Step-by-Step Example</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">GRA Continuity Guide</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Welcome and Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/expectations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Expectations and Advice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Onboarding</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">GRA Tasks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/gra_tasks/tasks_irb.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IRB Tasks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/gra_tasks/tasks_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Management and Analysis Tasks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Style Guide</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/emphasizing_text.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Emphasizing Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/document_library_structure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Document Library Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/collaboarating_on_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Collaborating on Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/start_here.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Getting Started with SOPs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Authoring SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/tone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/technologies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/versioning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Versioning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Coding Peer Review SOP</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/key_terms.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Key Terms and Definitions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/required_software.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Required Software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/process_overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/anatomy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anatomy of the Internal Peer Code Review Form</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/example.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Step-by-Step Example</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#scenario" id="toc-scenario" class="nav-link active" data-scroll-target="#scenario">Scenario</a></li>
+  <li><a href="#requester" id="toc-requester" class="nav-link" data-scroll-target="#requester">Requester</a>
+  <ul>
+  <li><a href="#copying-the-template-for-the-internal-peer-code-review-form" id="toc-copying-the-template-for-the-internal-peer-code-review-form" class="nav-link" data-scroll-target="#copying-the-template-for-the-internal-peer-code-review-form">Copying the Template for the Internal Peer Code Review Form</a></li>
+  <li><a href="#cover" id="toc-cover" class="nav-link" data-scroll-target="#cover">Cover</a></li>
+  <li><a href="#requester-provided-information-section" id="toc-requester-provided-information-section" class="nav-link" data-scroll-target="#requester-provided-information-section">Requester Provided Information Section</a></li>
+  <li><a href="#finalizing-and-sending-the-form-for-review" id="toc-finalizing-and-sending-the-form-for-review" class="nav-link" data-scroll-target="#finalizing-and-sending-the-form-for-review">Finalizing and Sending the Form for Review</a></li>
+  </ul></li>
+  <li><a href="#reviewer" id="toc-reviewer" class="nav-link" data-scroll-target="#reviewer">Reviewer</a>
+  <ul>
+  <li><a href="#verifying-administrative-details" id="toc-verifying-administrative-details" class="nav-link" data-scroll-target="#verifying-administrative-details">Verifying Administrative Details</a></li>
+  <li><a href="#verifying-access-to-files" id="toc-verifying-access-to-files" class="nav-link" data-scroll-target="#verifying-access-to-files">Verifying Access to Files</a></li>
+  <li><a href="#code-review" id="toc-code-review" class="nav-link" data-scroll-target="#code-review">Code Review</a></li>
+  <li><a href="#consolidating-feedback" id="toc-consolidating-feedback" class="nav-link" data-scroll-target="#consolidating-feedback">Consolidating Feedback</a></li>
+  <li><a href="#finalization" id="toc-finalization" class="nav-link" data-scroll-target="#finalization">Finalization</a></li>
+  </ul></li>
+  <li><a href="#notes-on-additional-revisions-or-disputes" id="toc-notes-on-additional-revisions-or-disputes" class="nav-link" data-scroll-target="#notes-on-additional-revisions-or-disputes">Notes on Additional Revisions or Disputes</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/overview.html">Coding Peer Review SOP</a></li><li class="breadcrumb-item"><a href="../../chapters/code_peer_review/example.html"><span class="chapter-title">Step-by-Step Example</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Step-by-Step Example</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This step-by-step example utilizes a scenario to demonstrate the process.</p>
+<section id="scenario" class="level5">
+<h5 class="anchored" data-anchor-id="scenario">Scenario</h5>
+<p>Ebiekimie Dambo (who goes by “Ebie”) was assigned a code-based task. This task was to modify the codebookr R package (maintained by Dr.&nbsp;Cannell) so that a user could use a CSV file to add column attributes in bulk. This required the use of two input files to create one output file. There were no helper functions or test files. Ebie had no specific requests for review, as she was primarily concerned about if the code would achieve the task objective reliably for another person. After completing this task, Ebie needed an Internal Peer Code Review. It was discussed at the weekly research team meeting on Monday, June 10, 2024, and Morrigan Mahady (who goes by “Morri”) accepted the role of reviewer.</p>
+</section>
+<section id="requester" class="level3">
+<h3 class="anchored" data-anchor-id="requester">Requester</h3>
+<p>Ebie’s process as the requester is broken down into 42 steps, with screenshots or figures to provide additional clarity for the step-by-step instructions.</p>
+<section id="copying-the-template-for-the-internal-peer-code-review-form" class="level4">
+<h4 class="anchored" data-anchor-id="copying-the-template-for-the-internal-peer-code-review-form">Copying the Template for the Internal Peer Code Review Form</h4>
+<ol type="1">
+<li>First, Ebie must copy the template. She navigates to the Peer Review folder on SharePoint. On the template file, she selects the option to <code>Copy to</code></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_copy_template.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../../graphics/peer_review_copy_template.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>She then selects “Copy here” to duplicate the template in the same folder.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_copy_here.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../../graphics/peer_review_copy_here.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>She clicks into the small “Error notification” on SharePoint.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_error_notification.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../../graphics/peer_review_error_notification.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>She selects “Keep both” to resolve the error.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_save_both.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../../graphics/peer_review_save_both.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>She enters the menu for her new copy of the template file (marked by the orange icon) and selects the option to rename the file. She names it “draft”, for now.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_draft.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../../graphics/peer_review_draft.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>She then selects the option to open the file in the Desktop App Version of Microsoft Word 365.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_desktop_app.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="../../graphics/peer_review_desktop_app.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="cover" class="level4">
+<h4 class="anchored" data-anchor-id="cover">Cover</h4>
+<p>After copying the Internal Peer Code Review form template file, Ebie looks at the Requester Process Checklist that starts on page 5. She sees that the first several items refer to fields in the Cover section, on page 1.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_cover_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="../../graphics/peer_review_ex_cover_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Ebie enters her own name in the “Requester Name” field.</li>
+<li>Ebie enters her own initials, “ed”, in the “Requester Initials” field.</li>
+<li>Ebie enters the date of her request (June 11, 2024) using the date-picker. It is automatically formatted for her.</li>
+<li>As this is the second Internal Peer Code Review for the project, Ebie enters the 02 in the “Review Number” field.</li>
+<li>As this is the first time Ebie is requesting a review of this code, she enters 01 in the “Revision Number” field.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_cover_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="../../graphics/peer_review_ex_cover_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="12" type="1">
+<li>She enters the URL to the code file she wants the reviewer to check. There is only one code file for this request.</li>
+<li>Ebie enters the name of the repository, which is “codebookr”.</li>
+<li>She enters the URL to her personal fork of this repository, as that’s the fork that contains the code she needs reviewed. If it passes review, it might be added to the main repository fork.</li>
+<li>She enters a brief description of the main goal of her task: to create a new method for efficiently adding attributes to data with many variables. She knows that Morri, her intended reviewer, is familiar with the codebookr package.</li>
+<li>While there are no sub-goals, Ebie does mention that this task is associated with an issue on GitHub. She utilizes the ability to do advanced formatting in this field by creating a hyperlink in the text.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_cover_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="../../graphics/peer_review_ex_cover_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="17" type="1">
+<li>She creates a brief title for this code review based on the Overall Goal she identified in Step 15. She calls it “Add-Col-Attrs-CSV” to keep it clear and under 20 characters.</li>
+<li>She then adds her reviewer’s name to the “Reviewer Name” field.</li>
+<li>She adds her reviewer’s initials, “mm”, to the “Reviewer Initials” field. If she did not know her reviewer at this time, she would put “xx” in the “Reviewer initials” field to complete the header. Ebie then checks her progress in the checklist. She adds a comment to the “Add Reviewer” item; this comment documents when Morrigan agreed to the role of reviewer. This is not required.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_cover_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="../../graphics/peer_review_ex_cover_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>She sees the final items on the Cover section on Page 1. These items require her to check the header and footer, and save the document with the proper file name protocol. 20. She checks that the footer successfully completed itself. The review number and revision number match what she entered on the Cover fields, so she accepts it as complete.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_cover_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="../../graphics/peer_review_ex_cover_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="21" type="1">
+<li>She checks that the header successfully completed itself. The review number, revision number, repository name, brief goal title, requester initials, and reviewer initials match what she entered on the Cover fields. She checks the format against the File Name Protocol. Since the file name matches the protocol, she accepts the header as complete.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_cover_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="../../graphics/peer_review_ex_cover_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="22" type="1">
+<li>She navigates to the file name, located at the top ribbon of the Microsoft Word 365 Desktop App. She renames the file from copying and pasting the name in the header, and correcting the values to ensure they are lowercase.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_cover_7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="../../graphics/peer_review_ex_cover_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="requester-provided-information-section" class="level4">
+<h4 class="anchored" data-anchor-id="requester-provided-information-section">Requester Provided Information Section</h4>
+<p>Ebie documents her progress in the checklist. She is able to see that the next several items will take her through the Requester Provided Information Section of the form.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="../../graphics/peer_review_ex_req_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="23" type="1">
+<li>Ebie opens her code in R Studio. After loading all packages and libraries, she uses the sessionInfo() command to view version information. She finds both expected packages listed: flextable and dplyr. The sessionInfo() command, R version, and dependency packages with versions are highlighted in the figure, for reference. Note that Ebie did not document every single package listed, as those packages are not directly utilized in her code.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="../../graphics/peer_review_ex_req_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="24" type="1">
+<li>She documents her version of R, as well as the version of both packages she used in her code.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="../../graphics/peer_review_ex_req_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="25" type="1">
+<li>Ebie reviews her input data. She has two separate input data files that she used in this code task.</li>
+<li>She begins by duplicating the Input Data section, so she can document each input data file separately.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="../../graphics/peer_review_ex_req_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="../../graphics/peer_review_ex_req_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="27" type="1">
+<li><p>She documents the name of the first input data file.</p></li>
+<li><p>She documents the URL of the first input data file. It’s hosted on GitHub, in the same fork as her code, because this data is testing data that has no PHI.</p></li>
+<li><p>She makes notes about the first input data file. These notes comment on the file’s purpose, how it was created, and its form. Note how this is brief and does not give a full exhaustive summary of every aspect of the data.</p></li>
+<li><p>Ebie then repeats this process with the second input data file.</p></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="../../graphics/peer_review_ex_req_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="31" type="1">
+<li>Ebie has only one Output Data file, so she does not need to duplicate the Output Data section. She records the name of her output data file.</li>
+<li>She records the URL of her output data file. This is stored on her personal SharePoint. If a file is stored on a personal SharePoint, it must be shared with the reviewer.</li>
+<li>She documents notes about the output data file. These notes mention its format, and why it is a “success” condition.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="../../graphics/peer_review_ex_req_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="34" type="1">
+<li>Ebie has no Test Files, so she documents “N/A” in all boxes in the Test File section. However, she does have a commented-out snippet of code that acts like a test in her main code file. She makes a mental note to document this elsewhere.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="../../graphics/peer_review_ex_req_8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="35" type="1">
+<li>Ebie outlines her thought process in the Task Process Notes section. She makes use of the advanced formatting allowed in this text box to include hyperlinks and useful screenshots. She specifically mentions the commented-out test code she noted in Step 34. These detailed notes take up one page.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_9.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="../../graphics/peer_review_ex_req_9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="36" type="1">
+<li>Ebie has no helper functions for her code, so she fills all fields with “N/A”. She could choose to document her main function here, but decides against it. If she were going to document a helper function, she would be sure to include the required items listed on the form.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_10.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="../../graphics/peer_review_ex_req_10.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="37" type="1">
+<li>Ebie is confident in her code. It has a straightforward purpose, and she has made sure to include helpful comments and annotations in the code itself. She primarily wants feedback on if her code is acceptable to merge into the main repository, which is not a line-by-line specific request. As such, she fills all fields in the Feedback Requests section with “N/A”.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_11.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="../../graphics/peer_review_ex_req_11.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Ebie reviews the checklist. She has completed the first portion of the checklist! She adds a comment to the Test File row to mention the commented-out code in the main code. This is not required, but it is helpful to a reviewer.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_req_12.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="../../graphics/peer_review_ex_req_12.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="finalizing-and-sending-the-form-for-review" class="level4">
+<h4 class="anchored" data-anchor-id="finalizing-and-sending-the-form-for-review">Finalizing and Sending the Form for Review</h4>
+<p>The remaining items on her checklist are finishing touches to her documentation.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_fin_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="../../graphics/peer_review_ex_fin_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="38" type="1">
+<li>As this is the first time Ebie is requesting this code be reviewed, she does not have any revision changes to note in the Executive Summary section. She follows the directions on the form, and completes this section with “NA – First Request”</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_fin_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="../../graphics/peer_review_ex_fin_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="39" type="1">
+<li>Ebie reviews all of her documentation one more time. She does not find anything else to add.</li>
+<li>She updates the Table of Contents, making sure to select “Update entire table”. She also finalizes her checklist before saving her work.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_fin_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="../../graphics/peer_review_ex_fin_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_fin_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="../../graphics/peer_review_ex_fin_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="41" type="1">
+<li>Ebie then copies the link to the Internal Peer Code Review Form on SharePoint</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_fin_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="../../graphics/peer_review_ex_fin_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="42" type="1">
+<li>She writes an email to her reviewer, Morrigan Mahady, using her UTHealth email. She includes the link to the Internal Peer Code Review Form on SharePoint in the body of the message. Now, Ebie moves to other work tasks while she waits for Morrigan’s review.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_fin_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="../../graphics/peer_review_ex_fin_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="reviewer" class="level3">
+<h3 class="anchored" data-anchor-id="reviewer">Reviewer</h3>
+<p>Morri’s process as the reviewer is broken down into # steps, with screenshots or figures to provide additional clarity for the step-by-step instructions.</p>
+<section id="verifying-administrative-details" class="level4">
+<h4 class="anchored" data-anchor-id="verifying-administrative-details">Verifying Administrative Details</h4>
+<p>After receiving the notification email from Ebie, Morri opens the file using the direct link. This opens the file in the web browser version of Microsoft Word 365. 1. Morri opens the navigation pane.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img src="../../graphics/peer_review_ex_admin_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Morri clicks on “Reviewer Process Checklist” in the navigation pane. This quickly jumps the screen to the Reviewer Process Checklist on page 14. They see that the first few items require them to check the Internal Peer Code Review Form itself.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img src="../../graphics/peer_review_ex_admin_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Morri looks over the Internal Peer Review Form, and sees all expected sections exist. They carefully review the Requester Provided Information section, and the Revision Summary sub-section of the Executive Summary section. They verify that no field is left entirely blank. Since Ebie followed the instructions and put “N/A” in fields that were intentionally blank, this is easy for Morri to do.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img src="../../graphics/peer_review_ex_admin_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Morri checks the file name in the top ribbon of the web browser version of Microsoft Word 365. She verifies that it matches the information in the fields of the Cover of the document, and that it meets the File Name Protocol.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-35"><img src="../../graphics/peer_review_ex_admin_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If Ebie (the requester) did not know the reviewer, the “reviewer initials” portion of the file name would be “xx”. Morri would need to correct this. This may be quickly done in the web browser version of Microsoft Word 365 by clicking into the file name and correcting the value.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-36"><img src="../../graphics/peer_review_ex_admin_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Morri checks that the file is saved in the proper location for this project. They click to view the file’s location.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37"><img src="../../graphics/peer_review_ex_admin_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Morri reviews the file’s location, and confirms it is the proper place for Internal Peer Code Review Forms for this project.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38"><img src="../../graphics/peer_review_ex_admin_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Morri then goes to open the file in the Desktop App Version of Microsoft Word 365. This may be found using the search tool, and selecting the appropriate option once it appears.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39"><img src="../../graphics/peer_review_ex_admin_8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Morri checks the “Reviewer Name” in the Cover, ensuring it is complete and correct. If Ebie (the requester) did not have a reviewer before sending the form, Morri would fill out this section now. Since Ebie (the requester) completed this section, Morri confirms it is correct.</li>
+<li>Morri checks the “Reviewer Initials” field in the Cover, ensuring it is complete and correct. If Ebie (the requester) did not have a reviewer before sending the form, Morri would fill out this section now. Since Ebie (the requester) completed this section, Morri confirms it is correct.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40"><img src="../../graphics/peer_review_ex_admin_8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="10" type="1">
+<li>Morri adds the date of their review to the “Review Date” field of the Cover, using the date-picker. Morri then checks that all fields of the Cover are complete.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_admin_10.png" class="lightbox" data-gallery="quarto-lightbox-gallery-41"><img src="../../graphics/peer_review_ex_admin_10.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="11" type="1">
+<li>Morri now reads all the information that Ebie (the requester) included in their form. This makes sure Morri is familiar with the task, and what Morri should expect to find as they review the code.</li>
+</ol>
+</section>
+<section id="verifying-access-to-files" class="level4">
+<h4 class="anchored" data-anchor-id="verifying-access-to-files">Verifying Access to Files</h4>
+<p>The next several steps on the Reviewer Process Checklist require the reviewer to check that they can access all listed files.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-42"><img src="../../graphics/peer_review_ex_access_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="12" type="1">
+<li>Morri first navigates to the requester’s copy of the repository, which is provided on the Cover.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-43"><img src="../../graphics/peer_review_ex_access_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="13" type="1">
+<li>Morri clones this repository. We clone the entire repository because code within a repository may be highly interconnected and behave unexpectedly outside of this context. The exact means of cloning the repository are outside of the scope of this SOP.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-44"><img src="../../graphics/peer_review_ex_access_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="14" type="1">
+<li>Morri then verifies that the code file in question is included in the copy of the repository. They use the link to the repository provided on the Cover to find the correct file. While not shown here, Morri should open the file to ensure it is not corrupted or otherwise inaccessible.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-45"><img src="../../graphics/peer_review_ex_access_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="15" type="1">
+<li>Morri then checks the input files. If they were not part of the repository, Morri would copy them into the appropriate folder of the cloned repository, which is almost always the “data” folder. While not shown here, Morri should open the files to ensure they are not corrupted or otherwise inaccessible.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-46"><img src="../../graphics/peer_review_ex_access_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="16" type="1">
+<li>Morri then checks the output files. Morri would download this file, if necessary. While not shown here, Morri should open the file to ensure it is not corrupted or otherwise inaccessible.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-47"><img src="../../graphics/peer_review_ex_access_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="17" type="1">
+<li>There is no test file in this example. Where one exists, the reviewer will verify it exists and is accessible, similar to Steps 14 and 15. Morri documents this in the comment field of the checklist.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-48"><img src="../../graphics/peer_review_ex_access_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="18" type="1">
+<li>There are no helper functions in this example. Where one exists, the reviewer will verify it exists and is accessible, similar to Steps 14, 15, and 16. Morri documents this in the comment field of the checklist.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-49"><img src="../../graphics/peer_review_ex_access_8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>At this point, Morri verifies their progress using the Reviewer Process Checklist.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_9.png" class="lightbox" data-gallery="quarto-lightbox-gallery-50"><img src="../../graphics/peer_review_ex_access_9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="19" type="1">
+<li>The next steps will involve reviewing the actual code. To prepare the Internal Peer Code Review Form, Morri ensures that there is a copy of the File Specific Feedback section for all code files. They also complete the “Name of the Code File Being Reviewed” for all copies.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_access_10.png" class="lightbox" data-gallery="quarto-lightbox-gallery-51"><img src="../../graphics/peer_review_ex_access_10.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="code-review" class="level4">
+<h4 class="anchored" data-anchor-id="code-review">Code Review</h4>
+<p>The next several steps, which perform the actual code review, may be repeated as many times as necessary to review all included code files. While every person has their own process, all reviewers are expected to review several specific things to set a minimum standard. The Checklist at the beginning of the File Specific Feedback section allows the reviewer to record notes at each step.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_code_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-52"><img src="../../graphics/peer_review_ex_code_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="20" type="1">
+<li>Morri has already checked that the code file exists in Step 14. Morri opens the file and performs a more thorough check to ensure that this appears to be the correct file. Morri has no issues opening or viewing the code file.</li>
+<li>While reviewing the code, Morri ensures that there is no PHI visible in the code. PHI may appear in comments, be used to specify a specific observation or value for a point-fix, and/or be displayed in code with tables or other output. Ensuring the code is free of PHI is important because all code on GitHub may be publicly viewed, and we must comply with HIPAA privacy regulations in our research. Morri does not find any PHI in the code file.</li>
+<li>Morri checks that the code fits with the SOPs for code formatting, including the Style Guide or the R4Epi Best Practices. The most common area of non-adherence to these standards is line lengths in code. Morri identifies several lines which exceed SOP guidelines. They record some general comments in the checklist comment box.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_code_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-53"><img src="../../graphics/peer_review_ex_code_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="23" type="1">
+<li>Morri checks that the code has a logical organization, and that it is both clear and easy to understand. They pay particular attention to annotations such as comments or parameter definitions. They would compare documentation in helper functions to the description given by the requester. Morri believes Ebie (the requester) has done an exceptional job in making sure the code is clear and understandable, so they record a note in the comment box of the checklist.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_code_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-54"><img src="../../graphics/peer_review_ex_code_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="24" type="1">
+<li>Morri has already checked that the input files were accessible in Step 24. At this stage, Morri checks that the file meets the description given by the requester, and that the code being reviewed is able to utilize this file without issue.</li>
+<li>Morri has already checked that the output files were accessible in Step 25. At this stage, Morri checks that the file meets the description given by the requester, and that it would be reasonable to expect the code to produce this output file.</li>
+<li>Morri then executes the code. If there is a test file or test function given by the requester, Morri could utilize it at this point. However, the reviewer should also attempt to independently test the code, where reasonable. Morri then compares the output created by the code to the output file given by the requester, to make sure they are either identical or reasonably similar, depending on the exact parameters of the code and task.</li>
+<li>Morri then evaluates if the code provided meets the primary goal of the task.</li>
+<li>Morri then evaluates if the code provided meets any subgoals outlined in the task. As there were no specific subgoals listed, Morri records a comment in the comment box of the checklist.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_code_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-55"><img src="../../graphics/peer_review_ex_code_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="29" type="1">
+<li>Morri then organizes their feedback for the file, starting with overall comments and suggestions. For each comment or suggestion, Morri provides a rationale so that the requester can understand how the reviewer came to this opinion. Note that Morri provides both positive (praise) and negative (criticism) feedback. Reviewers are encouraged to keep their feedback balanced, pointing out both were the requester did well and where they can improve, to give a more complete picture of the requester’s coding.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_code_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-56"><img src="../../graphics/peer_review_ex_code_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="30" type="1">
+<li>Morri then creates line-by-line feedback, where they call out specific sections of the code. This is potentially the most beneficial feedback for the requester, as it is the most specific and direct. Reviewers should always make suggestions, where possible. Note how Morri utilized formatting features such as hyperlinks and images to include specific suggestions and clear feedback, so that the requester may view the source(s) influencing Morri’s suggestions. This allows the requester to further develop their coding skills and apply feedback to future code tasks (not just this specific code task/file).</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_code_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-57"><img src="../../graphics/peer_review_ex_code_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="31" type="1">
+<li>Before finalizing this feedback, Morri also checks the Feedback Requests subsection of the Requester Provided Information section. If the requester has made any specific requests, Morri would address them now, adding their feedback to the tables as appropriate. Since Ebie (the requester) has made no requests, Morri does not have any further requirements for specific feedback.</li>
+</ol>
+<p>At this point, the checklist for the file-specific review is complete.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_code_7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-58"><img src="../../graphics/peer_review_ex_code_7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="consolidating-feedback" class="level4">
+<h4 class="anchored" data-anchor-id="consolidating-feedback">Consolidating Feedback</h4>
+<p>Now that Morri has completed the review of the file, they are ready to finish their feedback. The next several items guide Morri through that process. Note that Morri has already checked off items that were completed during the code review process, such as “Re-run files to check output” and “Review feedback request and respond”.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_consolidate_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-59"><img src="../../graphics/peer_review_ex_consolidate_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="32" type="1">
+<li>Morri completes the General Feedback section. To do this, they review their file-specific feedback and notes made in the checklists. This section should consolidate feedback given to all code files. Since there is only one code file in this review, most of this section is identical to the feedback given for the file itself. Morri adds the links they had used in the rationale of the line-by-line feedback.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_consolidate_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-60"><img src="../../graphics/peer_review_ex_consolidate_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="33" type="1">
+<li>Morri then completes the high-level summary of feedback in the Executive Summary. Note how Morri gives a brief summary of their opinions, what they feel the requester should do in response to this feedback, and the highest-level summary of their feedback. Note how Morri references some line-by-line feedback but does not repeat the details in this section. If Morri had any remaining questions or concerns, they would be listed in this section.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_consolidate_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-61"><img src="../../graphics/peer_review_ex_consolidate_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="34" type="1">
+<li>Morri selects the option that best corresponds to their “Overall Determination”. Morri feels that this code meets the task goals and only has minor formatting issues (which do not impact its function). As such, Morri selects “Accept (as-is, no revision)”. Further details on these options are in the <a href="../code_peer_review/anatomy.html#summary-of-reviewer-feedback">Summary of Reviewer Feedback subsection</a> of the <a href="../code_peer_review/anatomy.html">Anatomy of the Internal Peer Code Review Form section</a>.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_consolidate_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-62"><img src="../../graphics/peer_review_ex_consolidate_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="35" type="1">
+<li>Morri selects the option for “Meeting Required?” that best corresponds to their opinion on whether a meeting is required to complete the review. As Morri did not have any remaining questions and thus do not want a meeting, they select “No Meeting or Questions”. If Morri had to reach out for questions, required a meeting, or had already held a meeting with Ebie (the requester), this would be reflected here. Further details on these options are in the <a href="../code_peer_review/anatomy.html#summary-of-reviewer-feedback">Summary of Reviewer Feedback subsection</a> of the <a href="../code_peer_review/anatomy.html">Anatomy of the Internal Peer Code Review Form section</a>.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_consolidate_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-63"><img src="../../graphics/peer_review_ex_consolidate_5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="finalization" class="level4">
+<h4 class="anchored" data-anchor-id="finalization">Finalization</h4>
+<p>The final steps require Morri to finalize the document and return it to the requester.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_final_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-64"><img src="../../graphics/peer_review_ex_final_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="36" type="1">
+<li>Morri checks over their documentation to ensure it is complete. They do not identify any gaps, and thus consider it complete.</li>
+<li>Morri updates the Table of Contents, taking care to select the “Update all fields” option.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_final_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-65"><img src="../../graphics/peer_review_ex_final_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="38" type="1">
+<li>After a last check that the document is complete, Morri finalizes the checklists and ensures the document is saved.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_final_3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-66"><img src="../../graphics/peer_review_ex_final_3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="39" type="1">
+<li>Morri replies to the email sent by the requester, Ebie, using their UTHealth email. They include the direct link to the Internal Peer Code Review Form on SharePoint in the body of the message. If Morri had to move the file for SOP compliance, they should obtain the updated link. This review cycle is complete.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../graphics/peer_review_ex_final_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-67"><img src="../../graphics/peer_review_ex_final_4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This concludes this revision cycle for this review, including the associated Internal Peer Code Review Form.</p>
+</section>
+</section>
+<section id="notes-on-additional-revisions-or-disputes" class="level3">
+<h3 class="anchored" data-anchor-id="notes-on-additional-revisions-or-disputes">Notes on Additional Revisions or Disputes</h3>
+<p>If major revisions or other changes are made, the requester may request another review. This requires a separate Internal Peer Code Review Document. It should have the same review number and iterate the revision number by 1. The reviewer may be the same person, or a different person. The prior Internal Peer Code Review Form may be used as a reference, with updates made in the new form to reflect changes.</p>
+<p>If the requester disagrees with feedback given by the reviewer, the requester should note this disagreement in the Revision Summary of the next cycle’s form. If the requester disagrees with making any changes (which would preclude a further review and revision cycle), the requester can respond in writing to the reviewer’s email to outline the reasons for their disagreement. These notes outlining the disagreement should be done in a polite, professional manner and be as objective as possible. Significant disagreements that cannot be resolved through open dialogue should be brought to project leadership for guidance and resolution.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/code_peer_review/anatomy.html" class="pagination-link  aria-label=" &lt;span="" of="" the="" internal="" peer="" code="" review="" form&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Anatomy of the Internal Peer Code Review Form</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>GRA Continuity Guide by the Cannell Research Team</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","loop":false,"openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>

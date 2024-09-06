@@ -1,0 +1,507 @@
+---
+lightbox: true
+toc-depth: 5
+---
+# Step-by-Step Example
+
+This step-by-step example utilizes a scenario to demonstrate the process. 
+
+##### Scenario
+
+Ebiekimie Dambo (who goes by “Ebie”) was assigned a code-based task. This task was to modify the codebookr R package (maintained by Dr. Cannell) so that a user could use a CSV file to add column attributes in bulk. This required the use of two input files to create one output file. There were no helper functions or test files. Ebie had no specific requests for review, as she was primarily concerned about if the code would achieve the task objective reliably for another person. After completing this task, Ebie needed an Internal Peer Code Review. It was discussed at the weekly research team meeting on Monday, June 10, 2024, and Morrigan Mahady (who goes by “Morri”) accepted the role of reviewer.
+
+### Requester
+Ebie’s process as the requester is broken down into 42 steps, with screenshots or figures to provide additional clarity for the step-by-step instructions.
+
+#### Copying the Template for the Internal Peer Code Review Form
+1. First, Ebie must copy the template. She navigates to the Peer Review folder on SharePoint. On the template file, she selects the option to `Copy to`
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_copy_template.png"))
+```
+ 
+2. She then selects “Copy here” to duplicate the template in the same folder.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_copy_here.png"))
+``` 
+3. She clicks into the small “Error notification” on SharePoint.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_error_notification.png"))
+``` 
+
+4. She selects “Keep both” to resolve the error.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_save_both.png"))
+``` 
+ 
+5. She enters the menu for her new copy of the template file (marked by the orange icon) and selects the option to rename the file. She names it “draft”, for now.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_draft.png"))
+``` 
+
+6. She then selects the option to open the file in the Desktop App Version of Microsoft Word 365.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_desktop_app.png"))
+``` 
+
+ 
+#### Cover
+After copying the Internal Peer Code Review form template file, Ebie looks at the Requester Process Checklist that starts on page 5. She sees that the first several items refer to fields in the Cover section, on page 1.
+
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_cover_1.png"))
+``` 
+    
+7. Ebie enters her own name in the “Requester Name” field.
+8. Ebie enters her own initials, “ed”, in the “Requester Initials” field.
+9. Ebie enters the date of her request (June 11, 2024) using the date-picker. It is automatically formatted for her.
+10. As this is the second Internal Peer Code Review for the project, Ebie enters the 02 in the “Review Number” field.
+11. As this is the first time Ebie is requesting a review of this code, she enters 01 in the “Revision Number” field.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_cover_2.png"))
+``` 
+12.	She enters the URL to the code file she wants the reviewer to check. There is only one code file for this request.
+13.	Ebie enters the name of the repository, which is “codebookr”.
+14.	She enters the URL to her personal fork of this repository, as that’s the fork that contains the code she needs reviewed. If it passes review, it might be added to the main repository fork.
+15.	She enters a brief description of the main goal of her task: to create a new method for efficiently adding attributes to data with many variables. She knows that Morri, her intended reviewer, is familiar with the codebookr package.
+16.	While there are no sub-goals, Ebie does mention that this task is associated with an issue on GitHub. She utilizes the ability to do advanced formatting in this field by creating a hyperlink in the text.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_cover_3.png"))
+```  
+17.	She creates a brief title for this code review based on the Overall Goal she identified in Step 15. She calls it “Add-Col-Attrs-CSV” to keep it clear and under 20 characters.
+18.	She then adds her reviewer’s name to the “Reviewer Name” field. 
+19.	She adds her reviewer’s initials, “mm”, to the “Reviewer Initials” field. If she did not know her reviewer at this time, she would put “xx” in the “Reviewer initials” field to complete the header.
+Ebie then checks her progress in the checklist. She adds a comment to the “Add Reviewer” item; this comment documents when Morrigan agreed to the role of reviewer. This is not required.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_cover_4.png"))
+```  
+She sees the final items on the Cover section on Page 1. These items require her to check the header and footer, and save the document with the proper file name protocol.
+20.	She checks that the footer successfully completed itself. The review number and revision number match what she entered on the Cover fields, so she accepts it as complete.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_cover_5.png"))
+```  
+21.	She checks that the header successfully completed itself. The review number, revision number, repository name, brief goal title, requester initials, and reviewer initials match what she entered on the Cover fields. She checks the format against the File Name Protocol. Since the file name matches the protocol, she accepts the header as complete. 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_cover_6.png"))
+```  
+22.	She navigates to the file name, located at the top ribbon of the Microsoft Word 365 Desktop App. She renames the file from copying and pasting the name in the header, and correcting the values to ensure they are lowercase.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_cover_7.png"))
+``` 
+
+#### Requester Provided Information Section
+Ebie documents her progress in the checklist. She is able to see that the next several items will take her through the Requester Provided Information Section of the form.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_1.png"))
+``` 
+
+23.	Ebie opens her code in R Studio. After loading all packages and libraries, she uses the sessionInfo() command to view version information. She finds both expected packages listed: flextable and dplyr. The sessionInfo() command, R version, and dependency packages with versions are highlighted in the figure, for reference. Note that Ebie did not document every single package listed, as those packages are not directly utilized in her code.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_2.png"))
+``` 
+ 
+24.	She documents her version of R, as well as the version of both packages she used in her code.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_3.png"))
+``` 
+ 
+25.	Ebie reviews her input data. She has two separate input data files that she used in this code task. 
+26.	She begins by duplicating the Input Data section, so she can document each input data file separately.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_4.png"))
+```  
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_5.png"))
+``` 
+27.	She documents the name of the first input data file.
+28.	She documents the URL of the first input data file. It’s hosted on GitHub, in the same fork as her code, because this data is testing data that has no PHI.
+29.	She makes notes about the first input data file. These notes comment on the file’s purpose, how it was created, and its form. Note how this is brief and does not give a full exhaustive summary of every aspect of the data.
+
+30.	Ebie then repeats this process with the second input data file.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_6.png"))
+``` 
+
+31.	Ebie has only one Output Data file, so she does not need to duplicate the Output Data section. She records the name of her output data file.
+32.	She records the URL of her output data file. This is stored on her personal SharePoint. If a file is stored on a personal SharePoint, it must be shared with the reviewer.
+33.	She documents notes about the output data file. These notes mention its format, and why it is a “success” condition.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_7.png"))
+``` 
+
+34.	Ebie has no Test Files, so she documents “N/A” in all boxes in the Test File section. However, she does have a commented-out snippet of code that acts like a test in her main code file. She makes a mental note to document this elsewhere.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_8.png"))
+``` 
+
+35.	Ebie outlines her thought process in the Task Process Notes section. She makes use of the advanced formatting allowed in this text box to include hyperlinks and useful screenshots. She specifically mentions the commented-out test code she noted in Step 34. These detailed notes take up one page.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_9.png"))
+``` 
+
+36.	Ebie has no helper functions for her code, so she fills all fields with “N/A”. She could choose to document her main function here, but decides against it. If she were going to document a helper function, she would be sure to include the required items listed on the form.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_10.png"))
+```  
+
+37.	Ebie is confident in her code. It has a straightforward purpose, and she has made sure to include helpful comments and annotations in the code itself. She primarily wants feedback on if her code is acceptable to merge into the main repository, which is not a line-by-line specific request. As such, she fills all fields in the Feedback Requests section with “N/A”.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_11.png"))
+``` 
+ 
+Ebie reviews the checklist. She has completed the first portion of the checklist! She adds a comment to the Test File row to mention the commented-out code in the main code. This is not required, but it is helpful to a reviewer.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_req_12.png"))
+```  
+
+#### Finalizing and Sending the Form for Review
+The remaining items on her checklist are finishing touches to her documentation. 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_fin_1.png"))
+```  
+38.	As this is the first time Ebie is requesting this code be reviewed, she does not have any revision changes to note in the Executive Summary section. She follows the directions on the form, and completes this section with “NA – First Request”
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_fin_2.png"))
+```
+ 
+39.	Ebie reviews all of her documentation one more time. She does not find anything else to add.
+40.	She updates the Table of Contents, making sure to select “Update entire table”. She also finalizes her checklist before saving her work.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_fin_3.png"))
+``` 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_fin_4.png"))
+```
+
+41.	Ebie then copies the link to the Internal Peer Code Review Form on SharePoint
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_fin_5.png"))
+```
+
+42.	She writes an email to her reviewer, Morrigan Mahady, using her UTHealth email. She includes the link to the Internal Peer Code Review Form on SharePoint in the body of the message. Now, Ebie moves to other work tasks while she waits for Morrigan’s review.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_fin_6.png"))
+``` 
+
+### Reviewer
+Morri’s process as the reviewer is broken down into # steps, with screenshots or figures to provide additional clarity for the step-by-step instructions.
+
+#### Verifying Administrative Details
+After receiving the notification email from Ebie, Morri opens the file using the direct link. This opens the file in the web browser version of Microsoft Word 365. 
+1. Morri opens the navigation pane.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_1.png"))
+```
+
+2. Morri clicks on “Reviewer Process Checklist” in the navigation pane. This quickly jumps the screen to the Reviewer Process Checklist on page 14. They see that the first few items require them to check the Internal Peer Code Review Form itself.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_2.png"))
+```
+
+3. Morri looks over the Internal Peer Review Form, and sees all expected sections exist. They carefully review the Requester Provided Information section, and the Revision Summary sub-section of the Executive Summary section. They verify that no field is left entirely blank. Since Ebie followed the instructions and put “N/A” in fields that were intentionally blank, this is easy for Morri to do.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_3.png"))
+```
+
+4. Morri checks the file name in the top ribbon of the web browser version of Microsoft Word 365. She verifies that it matches the information in the fields of the Cover of the document, and that it meets the File Name Protocol. 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_4.png"))
+``` 
+
+If Ebie (the requester) did not know the reviewer, the “reviewer initials” portion of the file name would be “xx”. Morri would need to correct this. This may be quickly done in the web browser version of Microsoft Word 365 by clicking into the file name and correcting the value.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_5.png"))
+```
+
+5. Morri checks that the file is saved in the proper location for this project. They click to view the file’s location.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_6.png"))
+``` 
+6. Morri reviews the file’s location, and confirms it is the proper place for Internal Peer Code Review Forms for this project.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_7.png"))
+``` 
+7. Morri then goes to open the file in the Desktop App Version of Microsoft Word 365. This may be found using the search tool, and selecting the appropriate option once it appears.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_8.png"))
+```
+ 
+8. Morri checks the “Reviewer Name” in the Cover, ensuring it is complete and correct. If Ebie (the requester) did not have a reviewer before sending the form, Morri would fill out this section now. Since Ebie (the requester) completed this section, Morri confirms it is correct.
+9. Morri checks the “Reviewer Initials” field in the Cover, ensuring it is complete and correct. If Ebie (the requester) did not have a reviewer before sending the form, Morri would fill out this section now. Since Ebie (the requester) completed this section, Morri confirms it is correct.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_8.png"))
+``` 
+10.	Morri adds the date of their review to the “Review Date” field of the Cover, using the date-picker. Morri then checks that all fields of the Cover are complete.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_admin_10.png"))
+``` 
+11.	Morri now reads all the information that Ebie (the requester) included in their form. This makes sure Morri is familiar with the task, and what Morri should expect to find as they review the code. 
+
+#### Verifying Access to Files
+The next several steps on the Reviewer Process Checklist require the reviewer to check that they can access all listed files.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_1.png"))
+``` 
+12.	Morri first navigates to the requester’s copy of the repository, which is provided on the Cover. 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_2.png"))
+```
+
+13.	Morri clones this repository. We clone the entire repository because code within a repository may be highly interconnected and behave unexpectedly outside of this context. The exact means of cloning the repository are outside of the scope of this SOP.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_3.png"))
+``` 
+14.	Morri then verifies that the code file in question is included in the copy of the repository. They use the link to the repository provided on the Cover to find the correct file. While not shown here, Morri should open the file to ensure it is not corrupted or otherwise inaccessible.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_4.png"))
+```
+ 
+15.	Morri then checks the input files. If they were not part of the repository, Morri would copy them into the appropriate folder of the cloned repository, which is almost always the “data” folder. While not shown here, Morri should open the files to ensure they are not corrupted or otherwise inaccessible.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_5.png"))
+```
+ 
+16.	Morri then checks the output files. Morri would download this file, if necessary. While not shown here, Morri should open the file to ensure it is not corrupted or otherwise inaccessible.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_6.png"))
+```
+
+17.	There is no test file in this example. Where one exists, the reviewer will verify it exists and is accessible, similar to Steps 14 and 15. Morri documents this in the comment field of the checklist.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_7.png"))
+```
+ 
+18.	There are no helper functions in this example. Where one exists, the reviewer will verify it exists and is accessible, similar to Steps 14, 15, and 16. Morri documents this in the comment field of the checklist.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_8.png"))
+```
+
+At this point, Morri verifies their progress using the Reviewer Process Checklist.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_9.png"))
+```
+19.	The next steps will involve reviewing the actual code. To prepare the Internal Peer Code Review Form, Morri ensures that there is a copy of the File Specific Feedback section for all code files. They also complete the “Name of the Code File Being Reviewed” for all copies.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_access_10.png"))
+```
+
+#### Code Review
+The next several steps, which perform the actual code review, may be repeated as many times as necessary to review all included code files. While every person has their own process, all reviewers are expected to review several specific things to set a minimum standard. The Checklist at the beginning of the File Specific Feedback section allows the reviewer to record notes at each step. 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_code_1.png"))
+``` 
+20.	Morri has already checked that the code file exists in Step 14. Morri opens the file and performs a more thorough check to ensure that this appears to be the correct file. Morri has no issues opening or viewing the code file.
+21.	While reviewing the code, Morri ensures that there is no PHI visible in the code. PHI may appear in comments, be used to specify a specific observation or value for a point-fix, and/or be displayed in code with tables or other output. Ensuring the code is free of PHI is important because all code on GitHub may be publicly viewed, and we must comply with HIPAA privacy regulations in our research. Morri does not find any PHI in the code file.
+22.	Morri checks that the code fits with the SOPs for code formatting, including the Style Guide or the R4Epi Best Practices. The most common area of non-adherence to these standards is line lengths in code. Morri identifies several lines which exceed SOP guidelines. They record some general comments in the checklist comment box.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_code_2.png"))
+```
+
+23.	Morri checks that the code has a logical organization, and that it is both clear and easy to understand. They pay particular attention to annotations such as comments or parameter definitions. They would compare documentation in helper functions to the description given by the requester. Morri believes Ebie (the requester) has done an exceptional job in making sure the code is clear and understandable, so they record a note in the comment box of the checklist.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_code_3.png"))
+``` 
+24.	Morri has already checked that the input files were accessible in Step 24. At this stage, Morri checks that the file meets the description given by the requester, and that the code being reviewed is able to utilize this file without issue.
+25.	Morri has already checked that the output files were accessible in Step 25. At this stage, Morri checks that the file meets the description given by the requester, and that it would be reasonable to expect the code to produce this output file.
+26.	Morri then executes the code. If there is a test file or test function given by the requester, Morri could utilize it at this point. However, the reviewer should also attempt to independently test the code, where reasonable. Morri then compares the output created by the code to the output file given by the requester, to make sure they are either identical or reasonably similar, depending on the exact parameters of the code and task.
+27.	Morri then evaluates if the code provided meets the primary goal of the task.
+28.	Morri then evaluates if the code provided meets any subgoals outlined in the task. As there were no specific subgoals listed, Morri records a comment in the comment box of the checklist.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_code_4.png"))
+``` 
+29.	Morri then organizes their feedback for the file, starting with overall comments and suggestions. For each comment or suggestion, Morri provides a rationale so that the requester can understand how the reviewer came to this opinion. Note that Morri provides both positive (praise) and negative (criticism) feedback. Reviewers are encouraged to keep their feedback balanced, pointing out both were the requester did well and where they can improve, to give a more complete picture of the requester’s coding.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_code_5.png"))
+``` 
+30.	Morri then creates line-by-line feedback, where they call out specific sections of the code. This is potentially the most beneficial feedback for the requester, as it is the most specific and direct. Reviewers should always make suggestions, where possible. Note how Morri utilized formatting features such as hyperlinks and images to include specific suggestions and clear feedback, so that the requester may view the source(s) influencing Morri’s suggestions. This allows the requester to further develop their coding skills and apply feedback to future code tasks (not just this specific code task/file). 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_code_6.png"))
+``` 
+31.	Before finalizing this feedback, Morri also checks the Feedback Requests subsection of the Requester Provided Information section. If the requester has made any specific requests, Morri would address them now, adding their feedback to the tables as appropriate. Since Ebie (the requester) has made no requests, Morri does not have any further requirements for specific feedback.
+
+At this point, the checklist for the file-specific review is complete.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_code_7.png"))
+``` 
+
+#### Consolidating Feedback
+Now that Morri has completed the review of the file, they are ready to finish their feedback. The next several items guide Morri through that process. Note that Morri has already checked off items that were completed during the code review process, such as “Re-run files to check output” and “Review feedback request and respond”.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_consolidate_1.png"))
+```  
+ 
+32.	Morri completes the General Feedback section. To do this, they review their file-specific feedback and notes made in the checklists. This section should consolidate feedback given to all code files. Since there is only one code file in this review, most of this section is identical to the feedback given for the file itself. Morri adds the links they had used in the rationale of the line-by-line feedback.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_consolidate_2.png"))
+``` 
+33.	Morri then completes the high-level summary of feedback in the Executive Summary. Note how Morri gives a brief summary of their opinions, what they feel the requester should do in response to this feedback, and the highest-level summary of their feedback. Note how Morri references some line-by-line feedback but does not repeat the details in this section. If Morri had any remaining questions or concerns, they would be listed in this section.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_consolidate_3.png"))
+``` 
+34.	Morri selects the option that best corresponds to their “Overall Determination”. Morri feels that this code meets the task goals and only has minor formatting issues (which do not impact its function). As such, Morri selects “Accept (as-is, no revision)”. Further details on these options are in the [Summary of Reviewer Feedback subsection](../code_peer_review/anatomy.html#summary-of-reviewer-feedback) of the [Anatomy of the Internal Peer Code Review Form section](../code_peer_review/anatomy.html).
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_consolidate_4.png"))
+``` 
+35.	Morri selects the option for “Meeting Required?” that best corresponds to their opinion on whether a meeting is required to complete the review. As Morri did not have any remaining questions and thus do not want a meeting, they select “No Meeting or Questions”. If Morri had to reach out for questions, required a meeting, or had already held a meeting with Ebie (the requester), this would be reflected here. Further details on these options are in the [Summary of Reviewer Feedback subsection](../code_peer_review/anatomy.html#summary-of-reviewer-feedback) of the [Anatomy of the Internal Peer Code Review Form section](../code_peer_review/anatomy.html).
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_consolidate_5.png"))
+```
+
+#### Finalization
+The final steps require Morri to finalize the document and return it to the requester. 
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_final_1.png"))
+```
+36.	Morri checks over their documentation to ensure it is complete. They do not identify any gaps, and thus consider it complete.
+37.	Morri updates the Table of Contents, taking care to select the “Update all fields” option.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_final_2.png"))
+``` 
+38.	After a last check that the document is complete, Morri finalizes the checklists and ensures the document is saved.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_final_3.png"))
+``` 
+39.	Morri replies to the email sent by the requester, Ebie, using their UTHealth email. They include the direct link to the Internal Peer Code Review Form on SharePoint in the body of the message. If Morri had to move the file for SOP compliance, they should obtain the updated link. This review cycle is complete.
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "center"
+knitr::include_graphics(here::here("graphics", "peer_review_ex_final_4.png"))
+```
+This concludes this revision cycle for this review, including the associated Internal Peer Code Review Form.
+
+### Notes on Additional Revisions or Disputes
+If major revisions or other changes are made, the requester may request another review. This requires a separate Internal Peer Code Review Document. It should have the same review number and iterate the revision number by 1. The reviewer may be the same person, or a different person. The prior Internal Peer Code Review Form may be used as a reference, with updates made in the new form to reflect changes.
+
+If the requester disagrees with feedback given by the reviewer, the requester should note this disagreement in the Revision Summary of the next cycle’s form. If the requester disagrees with making any changes (which would preclude a further review and revision cycle), the requester can respond in writing to the reviewer’s email to outline the reasons for their disagreement. These notes outlining the disagreement should be done in a polite, professional manner and be as objective as possible. Significant disagreements that cannot be resolved through open dialogue should be brought to project leadership for guidance and resolution.
+

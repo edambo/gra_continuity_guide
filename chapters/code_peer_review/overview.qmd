@@ -1,0 +1,73 @@
+---
+lightbox: true
+---
+# Overview
+
+This SOP is intended to provide guidance on how to engage in the Internal Peer Review Process for code-based peer reviews. This includes a guide on how to utilize the Internal Peer Code Review Form. An example scenario is used to demonstrate the process. 
+
+### Target Audience 
+
+#### GRAs
+The primary users of the Peer Code Review Forms are Graduate Research Assistants (GRAs) that engage in code-based work on the project(s). These GRAs may request a peer review from each other or be prompted to request such a peer review by project leadership. As such, all GRAs that engage in code-based work should be familiar with the Internal Peer Code Review Form and process. 
+
+#### PM/PI or Other Project Leadership
+The Principal Investigator (PI) has ultimate responsibility for all products of the study. The Project Manager (PM) or other members of leadership may also oversee administrative tasks, including directing GRAs to complete an internal peer-to-peer review of materials. As such, project leadership such as the PI or PM may review any and all internal peer review documents as part of their own review(s). **As such, all internal peer review documents should be written with the expectation that they may be viewed by any and all member(s) of the project leadership at any time**.  
+
+### Purpose 
+
+This SOP is intended to provide guidance on how to utilize the Internal Peer Code Review Form. The internal peer code review process, including the form, are intended to achieve the following goals: 
+
+  1. Provide a mechanism for GRAs to perform an initial peer-to-peer review for major or common errors/issues in code, allowing project leadership to focus on high-level feedback and final oversight. 
+
+  2. Provide a learning opportunity for GRAs, many of whom are learning how to write code and document code for use in collaborative and/or publishable research projects, by providing structured prompts for common reviewer questions and/or documentation gaps. This includes the need to define task parameters, goals, and process steps, as well as the need to clearly document feedback and provide rationales to support requested changes. 
+
+  3. Minimize the time required in the process (both for the initial request documentation and the review) through a clear, uniform structure with logical organization. **The primary process should be able to be fully asynchronous, requiring initial code review to be completed without a dedicated meeting**. 
+
+  4. Facilitate an audit trail for changes made to code that may be specifically due to the peer review process. This is intended to facilitate continuity, transparency, and reproducibility. 
+
+### File Storage 
+
+All internal peer reviews should be kept within a `Peer Reviews` folder on SharePoint where they are visible and accessible to all project staff that may be involved in the internal peer review process. Code-based peer reviews should be stored in a designated “Code” folder within this parent directory, which also contains the template form document. This structure may be conceptualized as follows: 
+
+```{r, out.width="50%"}
+#| echo: false
+#| fig-align: "left"
+knitr::include_graphics(here::here("graphics", "folder_structure.png"))
+```
+
+These folders should be specific to the project. As such, the exact location may vary by project. 
+
+For files relating to the DETECT projects (including DETECT-RPC), they are stored on the DETECT SharePoint in the top-level folder “Peer Reviews”. As such, the path to the Internal Peer Code Review template document is:  
+
+`DETECT SharePoint/Documents/Peer Reviews/Code/00_template_p2p_code_01_01_repo_goal_ii_ii.docx` 
+
+## Known Limitations and Potential Alternatives 
+
+As of August 5, 2024, Microsoft Word 365 has limitations to its functionality in the web browser version of the software. These limitations include a lack of advanced features, such as content controls, which are used in the creation of fillable forms. This limitation, and a guide to utilizing these advanced features in the desktop application version of the software, is documented by Microsoft on [their official website](https://support.microsoft.com/en-us/office/create-a-form-in-word-that-users-can-complete-or-print-040c5cc1-e309-445b-94ac-542f732c8c8b#DevTabTopic=Web). Requests for this additional functionality are documented [on the Microsoft website since (at least) 2013](https://answers.microsoft.com/en-us/msoffice/forum/all/does-word-web-app-support-editing-documents-with/327745a0-64a2-475a-9b40-3e85cd17f244), so it is reasonable to conclude that Microsoft does not plan to add this functionality in the near future. 
+
+::: {.callout-important}
+At this time, it is required that the Internal Peer Code Review Form be opened in the Desktop App Version of Microsoft Word 365 (not the web browser version) for full functionality.
+:::
+
+In the creation of the Internal Peer Code Review Form, multiple alternatives were considered. The current system and alternatives are briefly documented below to facilitate future changes to the process, if required, while minimizing duplication of effort.  
+
+#### Word Document Forms
+[Official Documentation](https://support.microsoft.com/en-us/office/create-a-form-in-word-that-users-can-complete-or-print-040c5cc1-e309-445b-94ac-542f732c8c8b#DevTabTopic=Windows)
+This system is the system that was adopted. Advanced features in the Developer ribbon, such as content controls, would allow for restrictions on editing and auto-completion of a limited number of fields. The forms utilize existing SharePoint infrastructure and applications that are provided by UTHealth, which include version tracking and other administrative tools that would be useful in any audit/review. The system would allow flexibility in design, have a familiar interface for users, and keep requests and reviews within a single cohesive document. 
+
+#### GitHub Forms
+[Official Documentation](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema)
+This system would require all requests to be made in the form of GitHub issues, which are public facing. The form schema would only provide format to the initial request, not feedback or further revisions. While GitHub issues facilitate assignment modifications and documentation in a single thread, the inability to standardize both request and response resulted in us deciding against this system. 
+
+#### Microsoft Forms
+[Official Documentation](https://support.microsoft.com/en-us/office/forms-basics-1dd58027-40dc-42d0-9ca4-80ddecc5c696)
+This system would permit a standardized request form, and potentially permit a standardized response. However, this would require both a “request” and “review” form be created, with no built-in linkage between the two. This system was decided against due to limitations in keeping the data clearly understood for potential auditing/review, making clear assignment, and clear tracking of milestones. 
+
+#### Microsoft PowerApps, Including PowerBI
+[Official Documentation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/intro-maker-portal)
+These systems had potential to permit the creation of guided apps that standardized and linked both requests and reviews with central storage of all entries. However, there was a significant learning curve to properly utilize or modify any process that utilizes these systems. Due to this complexity, we decided against this system. 
+
+## SOP Authorship 
+This SOP document was originally written by Morrigan Mahady, GRA and Ebiekimie Dambo, GRA on August 5, 2024. Any modifications or revisions must be approved by the project PI, Dr. M.B. Cannell. 
+
+The example Internal Peer Code Review Form used in the creation of the [Step-by-Step Example](../code_peer_review/example.html) section was part of the DETECT project; the file is located on the [DETECT SharePoint](https://uthtmc.sharepoint.com/:w:/r/sites/SPHDETECT-RPC/Shared%20Documents/Peer%20Reviews/Code/p2p_code_02_01_codebookr_add-col-attrs-csv_ed_mm.docx.docx?d=w7af11509ddc843f6a6b2863140c6fdbe&csf=1&web=1&e=PkxTxQ). The process was developed as a joint effort between Morrigan Mahady and Ebiekimie Dambo, GRAs. 
