@@ -1,0 +1,53 @@
+/* Change nested numbered lists to nested lettered lists*/
+ol ol { 
+  list-style-type: lower-alpha; 
+  
+}
+
+/* Change numbered lists to lettered lists for the cover section*/
+#cover ol { 
+  list-style-type: upper-alpha;
+}
+
+/* Change nested numbered lists to nested lettered lists for the cover section*/
+#cover ol ol { 
+  list-style-type: lower-alpha; 
+  
+}
+
+/* Change numbered lists to lettered lists for the executive summary section*/
+#executive-summary ol { 
+  list-style-type: upper-alpha;
+}
+
+/* Change nested numbered lists to nested lettered lists for the executive 
+summary section*/
+#executive-summary ol ol { 
+  list-style-type: lower-alpha; 
+  
+}
+
+/* Change numbered lists to lettered lists for the requester provided 
+information section*/
+#requester-provided-information ol { 
+  list-style-type: upper-alpha;
+}
+
+/* Change nested numbered lists to nested lettered lists for the requester 
+provided information section*/
+#requester-provided-information ol ol { 
+  list-style-type: lower-alpha; 
+  
+}
+
+/* Change numbered lists to lettered lists for the reviewer feedback section*/
+#reviewer-feedback ol { 
+  list-style-type: upper-alpha;
+}
+
+/* Change nested numbered lists to nested lettered lists for the reviewer feedback 
+section*/
+#reviewer-feedback ol ol { 
+  list-style-type: lower-alpha; 
+  
+}

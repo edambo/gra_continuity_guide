@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GRA Continuity Guide - Technologies</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../chapters/authoring_sops/versioning.html" rel="next">
+<link href="../../chapters/authoring_sops/tone.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../custom_styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/overview.html">Authoring SOPs</a></li><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/technologies.html">Technologies</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">GRA Continuity Guide</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Welcome and Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/expectations.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Expectations and Advice</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/onboarding.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Onboarding</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">GRA Tasks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/gra_tasks/tasks_irb.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">IRB Tasks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/gra_tasks/tasks_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Data Management and Analysis Tasks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Style Guide</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/emphasizing_text.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Emphasizing Text</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/document_library_structure.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Document Library Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/collaboarating_on_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Collaborating on Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/style_guide/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/start_here.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Getting Started with SOPs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Authoring SOPs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Structure</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/tone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/technologies.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Technologies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/authoring_sops/versioning.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Versioning</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Coding Peer Review SOP</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/key_terms.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Key Terms and Definitions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/required_software.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Required Software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/process_overview.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Process Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/anatomy.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Anatomy of the Internal Peer Code Review Form</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../chapters/code_peer_review/example.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Step-by-Step Example</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#using-onenote-word-documents-and-teamssharepoint-pages" id="toc-using-onenote-word-documents-and-teamssharepoint-pages" class="nav-link active" data-scroll-target="#using-onenote-word-documents-and-teamssharepoint-pages">Using OneNote, Word Documents, and Teams/SharePoint Pages</a>
+  <ul>
+  <li><a href="#formatting" id="toc-formatting" class="nav-link" data-scroll-target="#formatting">Formatting</a></li>
+  <li><a href="#custom-styles" id="toc-custom-styles" class="nav-link" data-scroll-target="#custom-styles">Custom Styles</a></li>
+  <li><a href="#mobile-device-access" id="toc-mobile-device-access" class="nav-link" data-scroll-target="#mobile-device-access">Mobile Device Access</a></li>
+  <li><a href="#offline-access" id="toc-offline-access" class="nav-link" data-scroll-target="#offline-access">Offline Access</a>
+  <ul>
+  <li><a href="#from-a-desktoplaptop-computer-without-an-active-internet-connection" id="toc-from-a-desktoplaptop-computer-without-an-active-internet-connection" class="nav-link" data-scroll-target="#from-a-desktoplaptop-computer-without-an-active-internet-connection">From a desktop/laptop computer without an active internet connection</a></li>
+  <li><a href="#from-a-mobile-device-without-an-active-internet-connection" id="toc-from-a-mobile-device-without-an-active-internet-connection" class="nav-link" data-scroll-target="#from-a-mobile-device-without-an-active-internet-connection">From a mobile device without an active internet connection</a></li>
+  </ul></li>
+  <li><a href="#portability" id="toc-portability" class="nav-link" data-scroll-target="#portability">Portability</a>
+  <ul>
+  <li><a href="#exporting-onenote-notes" id="toc-exporting-onenote-notes" class="nav-link" data-scroll-target="#exporting-onenote-notes">Exporting OneNote notes</a></li>
+  <li><a href="#exporting-sharepoint-pages" id="toc-exporting-sharepoint-pages" class="nav-link" data-scroll-target="#exporting-sharepoint-pages">Exporting SharePoint pages</a></li>
+  </ul></li>
+  <li><a href="#permissions" id="toc-permissions" class="nav-link" data-scroll-target="#permissions">Permissions</a></li>
+  <li><a href="#searching-documents" id="toc-searching-documents" class="nav-link" data-scroll-target="#searching-documents">Searching Documents</a>
+  <ul>
+  <li><a href="#searching-in-onenote" id="toc-searching-in-onenote" class="nav-link" data-scroll-target="#searching-in-onenote">Searching in OneNote</a></li>
+  <li><a href="#searching-on-onedrive-for-documents" id="toc-searching-on-onedrive-for-documents" class="nav-link" data-scroll-target="#searching-on-onedrive-for-documents">Searching on OneDrive for documents</a></li>
+  <li><a href="#searching-on-sharepoint-for-documents" id="toc-searching-on-sharepoint-for-documents" class="nav-link" data-scroll-target="#searching-on-sharepoint-for-documents">Searching on SharePoint for documents</a></li>
+  <li><a href="#searching-sharepoint-pages" id="toc-searching-sharepoint-pages" class="nav-link" data-scroll-target="#searching-sharepoint-pages">Searching SharePoint pages</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/overview.html">Authoring SOPs</a></li><li class="breadcrumb-item"><a href="../../chapters/authoring_sops/technologies.html">Technologies</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-tech" class="quarto-section-identifier">Technologies</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>What technology (application), or technologies, should we use for writing our SOPs? We’ve experimented, and will continue to experiment, with many different applications, processes, and technologies for organizing and managing all aspects of our projects – including our SOPs. Here is what we’ve found so far.</p>
+<section id="using-onenote-word-documents-and-teamssharepoint-pages" class="level3">
+<h3 class="anchored" data-anchor-id="using-onenote-word-documents-and-teamssharepoint-pages">Using OneNote, Word Documents, and Teams/SharePoint Pages</h3>
+<p>For now, we know that we want to try to manage as much of our project as possible inside the Microsoft ecosystem. Because Microsoft products are universally the best? Not necessarily. In fact, some members of our team really dislike Microsoft products. Why, then? We want to manage as much of our project as possible inside the Microsoft Ecosystem because (1) UTHealth pays for it; (2) UTHealth IT security approves of it; (3) The majority of our team members – internal and external to UTHealth – are already familiar with, and have access to, Microsoft products.</p>
+<p>However, even within the Microsoft ecosystem, there are often multiple different applications and technologies we can choose to author and store SOPs. So, which technology should we use? In the table and paragraphs below, we list the pros and cons of using different Microsoft technologies for creating, editing, and accessing SOPs.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../graphics/microsoft_tech.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Summary of the pros and cons of using different Microsoft technologies for creating, editing, and accessing SOPs. A detailed discussion of each trait is in the sections below."><img src="../../graphics/microsoft_tech.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:300.0%" alt="Summary of the pros and cons of using different Microsoft technologies for creating, editing, and accessing SOPs. A detailed discussion of each trait is in the sections below."></a></p>
+<figcaption>Summary of the pros and cons of using different Microsoft technologies for creating, editing, and accessing SOPs. A detailed discussion of each trait is in the sections below.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="formatting" class="level4">
+<h4 class="anchored" data-anchor-id="formatting">Formatting</h4>
+<p>When it comes to formatting the SOPS, Word has the edge over OneNote and SharePoint pages. Word gives us finer control over formatting and more robust tools. Especially for things like tables.</p>
+</section>
+<section id="custom-styles" class="level4">
+<h4 class="anchored" data-anchor-id="custom-styles">Custom Styles</h4>
+<p>Using styles makes it so much easier to create consistently formatted documents. OneNote, Word, and SharePoint all have some basic built-in styles, but as of this writing, only Word allows us to create custom styles (e.g., the <code>Code</code> style and <code>File Paths</code> style available in this document). Here is a useful <a href="https://answers.microsoft.com/en-us/msoffice/forum/all/copying-style-in-word-for-the-mac/c2487cc6-901b-40a1-a445-77c598da520f">post</a> about sharing styles between Word documents.</p>
+</section>
+<section id="mobile-device-access" class="level4">
+<h4 class="anchored" data-anchor-id="mobile-device-access">Mobile Device Access</h4>
+<p>Mobile device access refers to the ease with which the SOP can be accessed and edited from a mobile device (i.e., phone or tablet).</p>
+<p>All three technologies have a mobile app; however, the OneNote mobile app probably provides the best overall mobile experience. It allows us to search, read, and edit notes with the fewest number of clicks/taps. Having said that, the difference between the three isn’t large when the app has an active internet connection.</p>
+</section>
+<section id="offline-access" class="level4">
+<h4 class="anchored" data-anchor-id="offline-access">Offline Access</h4>
+<p>Offline access refers to the ease with which the SOP can be accessed and edited in the absence of an active internet connection (e.g., when traveling).</p>
+<section id="from-a-desktoplaptop-computer-without-an-active-internet-connection" class="level5">
+<h5 class="anchored" data-anchor-id="from-a-desktoplaptop-computer-without-an-active-internet-connection">From a desktop/laptop computer without an active internet connection</h5>
+<p>OneNote provides the best experience out of the box. We can read and edit notes in the OneNote app, which will be synced with the server when an internet connection is reestablished. The same is true for Word documents, <a href="https://support.microsoft.com/en-us/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd">but only if they are being synced with the computer’s file system</a>. We highly recommend doing so. In general, SharePoint will not work without an internet connection.</p>
+</section>
+<section id="from-a-mobile-device-without-an-active-internet-connection" class="level5">
+<h5 class="anchored" data-anchor-id="from-a-mobile-device-without-an-active-internet-connection">From a mobile device without an active internet connection</h5>
+<p>OneNote provides the best experience out of the box here too. We can read and edit notes in the OneNote app, which will be synced with the server when an internet connection is reestablished. The same is true for Word documents, <a href="https://support.microsoft.com/en-us/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd">but only if they are being synced with the computer’s file system</a>. We highly recommend doing so. In general, the SharePoint mobile app will not work without an internet connection.</p>
+</section>
+</section>
+<section id="portability" class="level4">
+<h4 class="anchored" data-anchor-id="portability">Portability</h4>
+<p>In this context, “portability” refers to the ease with which the SOP can be shared, viewed, copied, and used outside of its current context. For example, if UTHealth decides to stop paying for Microsoft 365 tomorrow, could we access and use the SOPs?</p>
+<p>Word documents are highly portable. OneNote is slightly less so. Why does this matter? We never know what the technology situation will be like tomorrow. There are a number of reasons why we could potentially need to change the technologies and processes we are using. Therefore, the ease with which we could migrate our content to a different technology or process if we needed to is probably worth taking into consideration. Additionally, we often need to collaborate with team members outside of UTHealth. The ease with which team members who do not have internal access to UTHealth’s systems is another important dimension or portability.</p>
+<section id="exporting-onenote-notes" class="level5">
+<h5 class="anchored" data-anchor-id="exporting-onenote-notes"><a href="https://support.microsoft.com/en-us/office/export-and-import-onenote-notebooks-a4b60da5-8f33-464e-b1ba-b95ce540f309">Exporting OneNote notes</a></h5>
+<ul>
+<li>Exporting and importing notebooks through OneNote for the web is only available for notebooks stored on personal OneDrive accounts, not for notebooks stored on OneDrive for Business or SharePoint. For information about exporting notebooks to PDF files from OneNote 2016 for Windows, see <a href="https://support.microsoft.com/en-us/office/export-notes-from-onenote-as-a-pdf-13d173b5-7f4c-45a8-94eb-9354d63af5cd">Export notes from OneNote as a PDF</a>.</li>
+<li>This is kind of a big deal. If we ever need to adopt a new technology, migrating all of our notes out of OneNote could be very difficult.</li>
+</ul>
+</section>
+<section id="exporting-sharepoint-pages" class="level5">
+<h5 class="anchored" data-anchor-id="exporting-sharepoint-pages"><a href="https://learn.microsoft.com/en-us/sharepoint/administration/export-a-site-list-or-document-library">Exporting SharePoint pages</a></h5>
+<ul>
+<li>Exporting SharePoint pages is also relatively difficult process and requires administrator access.</li>
+</ul>
+</section>
+</section>
+<section id="permissions" class="level4">
+<h4 class="anchored" data-anchor-id="permissions">Permissions</h4>
+<p>While we definitely value every team member’s input into our SOPs, restricting editing permissions to one or two people can be a useful tool for maintaining the integrity of our SOPs. SharePoint has the most robust tools for assigning user permissions. However, these user permissions can be applied to Word documents when they are stored in a SharePoint library.</p>
+</section>
+<section id="searching-documents" class="level4">
+<h4 class="anchored" data-anchor-id="searching-documents">Searching Documents</h4>
+<p>Given the number of documents our research projects contain, the ability to search for documents and search for text within documents is an important consideration. We experimented with searching for documents, and text within documents, in OneNote, Teams, and SharePoint. Here is what we found.</p>
+<section id="searching-in-onenote" class="level5">
+<h5 class="anchored" data-anchor-id="searching-in-onenote">Searching in OneNote</h5>
+<p>OneNote has very robust search capabilities. The screenshot below is from the OneNote desktop app. We arbitrarily searched for the word “during.” OneNote returns a list of linked search results, across notebooks, with the search team highlighted in the text.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../graphics/one_note.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../../graphics/one_note.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="600"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="searching-on-onedrive-for-documents" class="level5">
+<h5 class="anchored" data-anchor-id="searching-on-onedrive-for-documents">Searching on OneDrive for documents</h5>
+<p>For this test, there was a document in OneDrive titled 🔴<a href="https://uthtmc-my.sharepoint.com/:w:/r/personal/michael_b_cannell_uth_tmc_edu/Documents/02%20Research/04%20DETECT/DETECT%20NIA%20R01/03%20Repositories/detect_clean_mdac_call_logs/issues/2023-01-20%20Multiple%20complete%20Records%20Per%20MedStar%20ID.docx?d=w3e7bc77253eb4f8c8c466eadd8294c59&amp;csf=1&amp;web=1&amp;e=THIPrF" class="mark">2023-01-20 Multiple complete Records Per MedStar ID.docx</a>. The document really isn’t that important for this example – we just picked something. It contains the following text, “ID 69967”. When we navigate to <a href="https://uthtmc-my.sharepoint.com/personal/michael_b_cannell_uth_tmc_edu/_layouts/15/onedrive.aspx?login_hint=Michael%2EB%2ECannell%40uth%2Etmc%2Eedu">OneDrive</a> and search for that text string in the search bar, the correct document comes up in the search results. However, the exact spot where the text appears is not shown in the search results.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../graphics/one_drive.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../../graphics/one_drive.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="598"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Having said that, it isn’t too big of a deal to just open the document and do a search for the text string in the document.</p>
+</section>
+<section id="searching-on-sharepoint-for-documents" class="level5">
+<h5 class="anchored" data-anchor-id="searching-on-sharepoint-for-documents">Searching on SharePoint for documents</h5>
+<p>For this test, there was a document in the <a href="https://uthtmc.sharepoint.com/sites/SPHDETECT-RPC/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=FZ7xxt&amp;FolderCTID=0x0120004E8A92AA55795C42852C8A438D043D68&amp;viewid=37263261%2D85dd%2D48f3%2D9aae%2D93321747db5e">DETECT SharePoint document library</a> titled, 🔴<mark>SOPs.docx.</mark> Again, there is nothing special about this document. We’re just using it as an example. It contains the following text, “A standard operation procedure”. When we navigate to the <a href="https://uthtmc.sharepoint.com/sites/SPHDETECT-RPC/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=FZ7xxt&amp;FolderCTID=0x0120004E8A92AA55795C42852C8A438D043D68&amp;viewid=37263261%2D85dd%2D48f3%2D9aae%2D93321747db5e">DETECT SharePoint document library</a> and search for that text string in the search bar, the correct document comes up in the search results. However, the exact spot where the text appears is not shown in the search results at first.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../graphics/share_point.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../../graphics/share_point.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="598"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Having said that, it isn’t too big of a deal to just open the document and do a search for the text string in the document. Additionally, if we click “Expand search to all items in this site” at the bottom of the search results screen:</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../graphics/expand_search.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../../graphics/expand_search.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="594"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Then SharePoint will return a more detailed list of linked search results that include a preview of the text string located in the document.Graphical user interface, text, application, email</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../graphics/sharepoint_detailed_list.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="../../graphics/sharepoint_detailed_list.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="596"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="searching-sharepoint-pages" class="level5">
+<h5 class="anchored" data-anchor-id="searching-sharepoint-pages">Searching SharePoint pages</h5>
+<p>For this test, we added a text web part to the <a href="https://uthtmc.sharepoint.com/sites/SPHDETECT-RPC/SitePages/Home.aspx">DETECT SharePoint homepage</a> that said, “Welcome to our DETECT SharePoint site!” When we navigate to the DETECT SharePoint homepage and search for that text string in the search bar, the correct document comes up in the search results and it includes a preview of the text string located in the document.</p>
+<div class="cell" data-layout-align="left">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../../graphics/sharepoint_pages.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="../../graphics/sharepoint_pages.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="566"></a></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Summary of the pros and cons of using different Microsoft technologies for creating, editing, and accessing SOPs. A detailed discussion of each trait is in the sections below.</span>
+</div>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../chapters/authoring_sops/tone.html" class="pagination-link  aria-label=" tone"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tone</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../chapters/authoring_sops/versioning.html" class="pagination-link" aria-label="<span class='chapter-number'>13</span>&nbsp; <span class='chapter-title'>Versioning</span>">
+        <span class="nav-page-text"><span class="chapter-title">Versioning</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>GRA Continuity Guide by the Cannell Research Team</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>
