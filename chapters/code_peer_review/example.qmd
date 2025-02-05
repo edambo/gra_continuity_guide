@@ -245,10 +245,11 @@ knitr::include_graphics(here::here("graphics", "peer_review_ex_fin_6.png"))
 ``` 
 
 ### Reviewer
-Morri’s process as the reviewer is broken down into # steps, with screenshots or figures to provide additional clarity for the step-by-step instructions.
+Morri’s process as the reviewer is broken down into 11 steps, with screenshots or figures to provide additional clarity for the step-by-step instructions.
 
 #### Verifying Administrative Details
 After receiving the notification email from Ebie, Morri opens the file using the direct link. This opens the file in the web browser version of Microsoft Word 365. 
+
 1. Morri opens the navigation pane.
 ```{r, out.width="50%"}
 #| echo: false
